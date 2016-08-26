@@ -7,7 +7,7 @@
 		<div class="col-sm-12">
 			<div class="kadima_heading_title">
 				<h1><?php echo esc_attr($wl_theme_options['home_service_heading']); ?></h1>
-				<hr style="margin-top: -1em;margin-bottom: 0px; */border: 0;width: 60%;border-top: 1px solid #0e88e3;"/>
+				<hr style="margin-top: -1em;margin-bottom: 0px; border: 0;width: 60%;border-top: 1px solid #0e88e3;"/>
 			</div>
 		</div>
 	</div>

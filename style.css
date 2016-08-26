@@ -2,7 +2,7 @@
 Theme Name:     KadimaTieco
 Theme URI:      http: //28story.com/
 Description:    Child theme for the Kadima theme
-Author:         Your JamesLiao here
+Author:         JamesLiao
 Author URI:     http: //28story.com/
 Template:       kadima
 Version:        0.1.0
@@ -12,15 +12,12 @@ Version:        0.1.0
 body {
   color: #000 !important;
 }
-.navigation_menu {
-  /*background-color: #292929 !important;*/
-  border-top: 0px !important;
-}
 .logo {
   float: left;
   padding-top: 1em;
   margin-bottom: -1em;
 }
+/** navbar ***/
 .navbar {
   margin-bottom: 0px !important;
 }
@@ -65,7 +62,6 @@ body {
 }
 .dropdown-menu {
   background-color: rgba(14, 136, 227, 0.9) !important;
-  ;
 }
 .fa-angle-down {
   padding-left: 0.5em;
@@ -116,64 +112,23 @@ body {
 .kadima_blog_wrapper {
   margin-bottom: 0px !important;
 }
-.kadima_footer_area p {
-  text-align: left !important;
-}
 .kadima_footer_area {
   background: #0e88e3 !important;
 }
-.kadima_footer_area p {
+.kadima_footer_area p {	  
+  text-align: left !important;
   font-size: 1em !important;
 }
 .social li {
   -webkit-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.6) !important;
   border: 0px solid #ffffff !important;
 }
-
-/* facebook */
-
-.social li.facebook {
-  background-image: none !important;
-}
-.social li.facebook:hover {
-  background-color: #0e88e3 !important;
+.social li.facebook:hover, .social li.dribbble:hover, .social li.twitter:hover, .social li.linkedin:hover, .social li.youtube:hover {
+    background-color: #0e88e3 !important;
 }
 
-/* dribble */
 
-.social li.dribbble {
-  background-image: none !important;
-}
-.social li.dribbble:hover {
-  background-color: #0e88e3 !important;
-}
 
-/* dribble */
-
-.social li.twitter {
-  background-image: none !important;
-}
-.social li.twitter:hover {
-  background-color: #0e88e3 !important;
-}
-
-/* linkedin */
-
-.social li.linkedin {
-  background-image: none !important;
-}
-.social li.linkedin:hover {
-  background-color: #0e88e3 !important;
-}
-
-/* youtube */
-
-.social li.youtube {
-  background-image: none !important;
-}
-.social li.youtube:hover {
-  background-color: #0e88e3 !important;
-}
 .breadcrumb li a {
   color: #0e88e3 !important;
 }
