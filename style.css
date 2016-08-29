@@ -14,7 +14,7 @@ body {
 }
 .logo {
   float: left;
-  padding-top: 1em;
+  padding-top: 0.5em;
   margin-bottom: -1em;
 }
 /** navbar ***/
@@ -114,8 +114,9 @@ body {
 }
 .kadima_footer_area {
   background: #0e88e3 !important;
+  padding: 10px 0 10px !important;
 }
-.kadima_footer_area p {	  
+.kadima_footer_area p {
   text-align: left !important;
   font-size: 1em !important;
 }
