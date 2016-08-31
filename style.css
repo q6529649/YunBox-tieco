@@ -7,14 +7,12 @@ Author URI:     http: //28story.com/
 Template:       kadima
 Version:        0.1.0
 */
-
-@import url("../kadima/style.css");
 body {
   color: #000 !important;
 }
 .logo {
   float: left;
-  padding-top: 0.5em;
+  padding-top: 0.5em !important;
   margin-bottom: -1em;
 }
 /** navbar ***/
@@ -23,6 +21,10 @@ body {
 }
 .navbar-collapse {
   box-shadow: none !important;
+}
+.navbar-toggle {
+    background-color: #0e88e3 !important;
+    border: 0px solid #0e88e3 !important;
 }
 .navbar-nav {
   float: right !important;
@@ -35,15 +37,11 @@ body {
   padding-left: 2em !important;
   padding-right: 2em !important;
 }
-
 /*  header contact info section ***/
-
 .header_section {
   background-color: #0e88e3 !important;
 }
-
 /** navbar menus ***/
-
 .navigation_menu {
   border-top: 2px solid #0e88e3 !important;
 }
@@ -61,7 +59,7 @@ body {
   background-color: #0e88e3 !important;
 }
 .dropdown-menu {
-  background-color: rgba(14, 136, 227, 0.9) !important;
+  background-color: #0e88e3 !important;
 }
 .fa-angle-down {
   padding-left: 0.5em;
@@ -127,9 +125,6 @@ body {
 .social li.facebook:hover, .social li.dribbble:hover, .social li.twitter:hover, .social li.linkedin:hover, .social li.youtube:hover {
     background-color: #0e88e3 !important;
 }
-
-
-
 .breadcrumb li a {
   color: #0e88e3 !important;
 }
@@ -148,4 +143,12 @@ body {
 }
 .progress-bar {
   background-color: #0e88e3 !important;
+}
+.kadima_header_topline {
+    background: #0e88e3;
+    color: #fff;
+    height: 2px;
+}
+.kadima_photo_gallery {
+    margin-bottom: 1em !important;
 }
