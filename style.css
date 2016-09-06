@@ -83,7 +83,7 @@ body {
 .kadima_service {
   padding-top: 40px !important;
   padding-bottom: 40px !important;
-  background-color: rgba(220, 220, 220, 0.4);
+  /*background-color: rgba(220, 220, 220, 0.4);*/
 }
 .kadima_service_iocn {
   margin: 0 auto;
