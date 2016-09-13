@@ -1,9 +1,9 @@
 /*
 Theme Name:     KadimaTieco
-Theme URI:      http: //28story.com/
+Theme URI:      http://28story.com/
 Description:    Child theme for the Kadima theme
 Author:         JamesLiao
-Author URI:     http: //28story.com/
+Author URI:     http://28story.com/
 Template:       kadima
 Version:        0.1.0
 */
@@ -93,6 +93,9 @@ body {
   background-color: #0e88e3 !important;
   background-image: linear-gradient(to bottom, #0e88e3 50%, #fff 50%) !important;
 }
+.kadima_service_iocn a, .kadima_service_iocn a:hover {
+    color: #0e88e3 !important;
+}
 .kadima_service_area:hover .kadima_service_iocn i {
   color: #0e88e3 !important;
 }
@@ -103,7 +106,6 @@ body {
   margin-top: 1em;
 }
 .kadima_service_detail p {
-  font-weight: bold;
   font-size: 1em !important;
   line-height: 26px !important;
 }
