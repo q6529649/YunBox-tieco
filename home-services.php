@@ -20,14 +20,17 @@
 				<div class="kadima_service_area appear-animation bounceIn appear-animation-visible">
 					<?php if($wl_theme_options['service_'.$i.'_icons'] !='') { ?>
                         <div class="kadima_service_iocn">
-                            <i class="<?php echo esc_attr($wl_theme_options['service_'.$i.'_icons']); ?>"></i>
+							<a href="<?php echo esc_url($wl_theme_options['service_'.$i.'_link']); ?>">
+                            	<i class="<?php echo esc_attr($wl_theme_options['service_'.$i.'_icons']); ?>"></i>
+							</a>
                         </div>
                     <?php } ?>
 					<div class="kadima_service_detail media-body">
 						<?php if($wl_theme_options['service_'.$i.'_title'] !='') { ?>
 							<h3>
 								<a href="<?php echo esc_url($wl_theme_options['service_'.$i.'_link']); ?>">
-								<?php echo esc_attr($wl_theme_options['service_'.$i.'_title']); ?></a>
+									<?php echo esc_attr($wl_theme_options['service_'.$i.'_title']); ?>
+								</a>
 							</h3>
                             <hr style="border:none;border-top:1px dashed #f9b62a;" />
 						<?php } ?>
