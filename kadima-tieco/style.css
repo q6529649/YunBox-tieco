@@ -226,3 +226,24 @@ body {
 .wpb_wl_preview_area .wpb_wl_preview {
     background: #0e88e3 !important;
 }
+.nav .open > a, .nav .open > a:hover, .nav .open>a:focus {
+    background-color: #fff !important;
+	color:#000;
+}
+
+@media screen and (min-width: 768px) {
+	.kadima_blog_post_content .service_word_1 {
+		padding-top: 6rem;
+	}
+	.kadima_blog_post_content .service_word_2 {
+		padding-top: 8rem;
+	}
+}
+@media screen and (max-width: 767px) {
+	.kadima_blog_post_content .service_word_1 {
+		padding-top: 1rem;
+	}
+	.kadima_blog_post_content .service_word_2 {
+		padding-top: 1rem;
+	}
+}
