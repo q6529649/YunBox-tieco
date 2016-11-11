@@ -943,6 +943,21 @@ function kadima_gl_customizer( $wp_customize ) {
 		'type'=>'url',
 		'section'    => 'footer_section',
 		'settings'   => 'kadima_options[info_mail]'
+	) );	
+    $wp_customize->add_setting(
+	   'kadima_options[info_support]',
+		array(
+    		'default'=>esc_attr($wl_theme_options['info_support']),
+    		'type'=>'option',
+    		'capability'=>'edit_theme_options',
+    		'sanitize_callback'=>'kadima_sanitize_text',
+		)
+	);
+	$wp_customize->add_control( 'info_support', array(
+		'label'        => __( 'Mail', 'kadima' ),
+		'type'=>'url',
+		'section'    => 'footer_section',
+		'settings'   => 'kadima_options[info_support]'
 	) );
 }
 function kadima_sanitize_text( $input ) {

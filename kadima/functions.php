@@ -77,6 +77,7 @@
 			'info_tel' => __('', 'kadima' ),
 			'info_fax' => __('', 'kadima' ),
 			'info_mail'=> __('', 'kadima' ),
+			'info_support'=> __('', 'kadima' ),
             //
 			'service_home'=>'1',
 			'home_service_heading' => __('Title', 'kadima' ),
