@@ -6,14 +6,14 @@
 	<div class="row">
 		<div class="col-sm-12">
 			<div class="kadima_heading_title">
-				<h3><?php echo esc_attr($wl_theme_options['home_service_heading']); ?></h3>		
+				<h3><?php echo esc_attr($wl_theme_options['home_service_heading']); ?></h3>
 			</div>
 		</div>
 	</div>
-</div>	
+</div>
 <?php } ?>
 <div class="container">
-		<div class="row isotope" id="isotope-service-container">		
+		<div class="row isotope" id="isotope-service-container">
 			<?php for($i=1; $i<4; $i++ ) { ?>
 			<div class=" col-md-4 service">
 				<div class="kadima_service_area appear-animation bounceIn appear-animation-visible">
@@ -24,8 +24,8 @@
 					</div>
 				</div>
 			</div>
-			<?php } ?>	
+			<?php } ?>
 		</div>
 	</div>
-</div>	 
+</div>
 <!-- /Service section -->

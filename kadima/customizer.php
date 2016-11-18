@@ -943,7 +943,7 @@ function kadima_gl_customizer( $wp_customize ) {
 		'type'=>'url',
 		'section'    => 'footer_section',
 		'settings'   => 'kadima_options[info_mail]'
-	) );	
+	) );
     $wp_customize->add_setting(
 	   'kadima_options[info_support]',
 		array(
@@ -954,7 +954,7 @@ function kadima_gl_customizer( $wp_customize ) {
 		)
 	);
 	$wp_customize->add_control( 'info_support', array(
-		'label'        => __( 'Mail', 'kadima' ),
+		'label'        => __( 'Power by', 'kadima' ),
 		'type'=>'url',
 		'section'    => 'footer_section',
 		'settings'   => 'kadima_options[info_support]'

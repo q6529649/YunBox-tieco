@@ -699,7 +699,7 @@ h1, h2, h3, h4, h5, h6 {
 .dropdown-menu> li> a:hover, .dropdown-menu> li> a:focus {
     color: #000;
     text-decoration: none;
-    background-color: #ffffff;
+    background-color: #ffffff !important;
     padding: 7px 20px 7px 22px;
     font-family: 'Arimo', Arial, Helvetica, sans-serif;
 }
@@ -716,7 +716,7 @@ h1, h2, h3, h4, h5, h6 {
 .dropdown-menu> .active> a, .dropdown-menu> .active> a:hover, .dropdown-menu> .active> a:focus {
     color: #333;
     text-decoration: none;
-    background-color: #fff;
+    background-color: #fff !important;
     outline: 0;
 }
 .dropdown-menu> .disabled> a, .dropdown-menu> .disabled> a:hover, .dropdown-menu> .disabled> a:focus {

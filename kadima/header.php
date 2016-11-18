@@ -25,7 +25,7 @@
 			<!-- Logo & Contact Info -->
 			<div class="row ">
 				<div class="col-md-6 col-sm-12 wl_rtl" >
-					<div claSS="logo">
+					<div class="logo">
 					<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<?php if($wl_theme_options['upload_image_logo']){ ?>
 						<img class="img-responsive" src="<?php echo $wl_theme_options['upload_image_logo']; ?>" style="height:<?php if($wl_theme_options['height']!='') { echo $wl_theme_options['height']; }  else { "80"; } ?>px; width:<?php if($wl_theme_options['width']!='') { echo $wl_theme_options['width']; }  else { "200"; } ?>px;" />
@@ -68,7 +68,6 @@
 	<!-- /Header Section -->
 	<!-- Navigation  menus -->
 	<div class="navigation_menu "  data-spy="affix" data-offset-top="95" id="kadima_nav_top">
-		<span id="header_shadow"></span>
 		<div class="container navbar-container" >
 			<nav class="navbar navbar-default " role="navigation">
 				<div class="navbar-header">

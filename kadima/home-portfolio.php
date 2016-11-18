@@ -38,7 +38,6 @@
 					</div>
 					<?php } ?>
 					</div>
-					<div class="kadima_portfolio_shadow"></div>
 				</div>
 				<?php } ?>
 				<?php } ?>

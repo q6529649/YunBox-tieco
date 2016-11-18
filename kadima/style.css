@@ -21,7 +21,7 @@ Text Domain: kadima
 
 body {
     /* padding:0 30px;*/
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     background-color: #fff;
 }
 #wrapper {
@@ -39,11 +39,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     color: #666;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
 p, .textwidget {
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 26px;
 }
@@ -70,11 +70,11 @@ p, .textwidget {
 .logo {
     text-align: left;
     padding-bottom: 0px;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .logo a {
     font-weight: 600;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
     font-size: 50px;
     color: #fff;
@@ -83,7 +83,7 @@ p, .textwidget {
     color: #fff;
 }
 .logo p {
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     margin-top: 5px;
     color: #fff;
 }
@@ -186,7 +186,7 @@ p, .textwidget {
     font-weight: 500;
     text-transform: uppercase;
     font-weight: 600;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .kadima_heading_title2 {
     display: block;
@@ -198,7 +198,7 @@ p, .textwidget {
     letter-spacing: 1px;
     padding-bottom: 10px;
     font-weight: 600;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .kadima_heading_title2 h3 {
     font-size: 22px;
@@ -230,7 +230,7 @@ p, .textwidget {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 3em;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
@@ -261,7 +261,7 @@ p, .textwidget {
     margin-bottom: 10px;
     overflow: hidden;
     font-weight: 600;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     padding: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -288,18 +288,6 @@ p, .textwidget {
     -ms-animation-delay: .7s;
     -o-animation-delay: .7s;
     animation-delay: .7s;
-}
-.kadima_slider_shadow {
-    background: url('./images/shadow1.png') no-repeat top center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 80px;
-    z-index: 99;
-    width: 100%;
-    background-size: 100% 100%;
-    height: 60px;
-    bottom: -60px;
 }
 
 /** Service Section  ***************************************************************************************************************
@@ -348,7 +336,7 @@ p, .textwidget {
     word-wrap: break-word;
     margin: 0 0 10px;
     font-weight: 600;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .kadima_service_detail p {
     font-size: 16px;
@@ -388,7 +376,7 @@ p, .textwidget {
     letter-spacing: normal;
     line-height: 27px;
     font-weight: 600;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .kadima_service_detail_2 p {
     font-size: 18px;
@@ -538,7 +526,7 @@ p, .textwidget {
     border-radius: 0;
     padding: 0 0 15px;
     text-align: center;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
 .kadima_home_portfolio_caption h3 {
@@ -547,7 +535,7 @@ p, .textwidget {
     margin: 0;
     padding: 9px 3px 0px;
     line-height: 35px;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .kadima_home_portfolio_caption small {
     font-size: 13px;
@@ -656,7 +644,7 @@ p, .textwidget {
 .kadima-project-description p {
     text-align: left;
     font-size: 16px;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-weight: 500;
 }
 .kadima-related-project {
@@ -699,7 +687,7 @@ p, .textwidget {
     padding-left: 10px;
 }
 .kadima-project-detail-sidebar p {
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -708,7 +696,7 @@ p, .textwidget {
     padding-top: 0px;
 }
 .kadima-project-detail-sidebar p small {
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 15px;
     padding-left: 0px;
     display: block;
@@ -717,7 +705,7 @@ p, .textwidget {
 .kadima-project-detail-sidebar .launch-kadima-project a {
     display: inline-block;
     font-weight: 600;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 20px;
     margin: 15px 0 15px;
@@ -1104,7 +1092,7 @@ p, .textwidget {
     border-radius: 0px;
     display: block;
     font-weight: 600;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     width: 100px;
     padding-top: 10px;
     padding-left: 10px;
@@ -1151,7 +1139,7 @@ p, .textwidget {
     width: 100%;
 }
 .kadima_blog_post_content p {
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 27px;
     margin: 0 0 20px;
@@ -1204,7 +1192,7 @@ p, .textwidget {
     margin: 0 0 0px !important;
 }
 .kadima_recent_widget_post h3, .kadima_footer_widget_column ul li {
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 2px;
@@ -1227,7 +1215,7 @@ p, .textwidget {
     display: block;
 }
 .kadima_recent_widget_post_date {
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 13px;
     line-height: 20px;
     color: #ffffff;
@@ -1255,7 +1243,7 @@ p, .textwidget {
 }
 .kadima_sidebar_widget .kadima_recent_widget_post h3 {
     font-weight: 600;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 20px;
     margin-bottom: 2px;
@@ -1264,7 +1252,7 @@ p, .textwidget {
 .kadima_sidebar_widget h3 {
     display: inline-block;
     font-weight: 600;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 5px;
@@ -1310,7 +1298,7 @@ p, .textwidget {
     border: 0 none;
     cursor: pointer;
     display: inline-block;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: normal;
     line-height: 20px;
@@ -1335,7 +1323,7 @@ p, .textwidget {
 }
 .kadima_footer_widget_column ul li, .kadima_footer_widget_column ul#recentcomments li a {
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 20px;
     transition: all 0.2s ease 0s;
@@ -1343,7 +1331,7 @@ p, .textwidget {
 .kadima_sidebar_link p a, .kadima_sidebar_widget ul li a {
     transition: all 0.4s ease 0s;
     display: block;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 20px;
 }
@@ -1358,7 +1346,7 @@ p, .textwidget {
 }
 .kadima_sidebar_link p, .kadima_sidebar_widget ul li {
     display: block;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     transition: all 0.4s ease 0s;
     padding-bottom: 10px;
@@ -1380,7 +1368,7 @@ p, .textwidget {
     cursor: pointer;
     display: inline-block;
     font-weight: 600;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 14px !important;
     line-height: 20px;
     margin: 0 5px 10px 0;
@@ -1450,7 +1438,7 @@ p, .textwidget {
     color: #fff;
 }
 .kadima_author_detail_wrapper p {
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 25px;
     margin: 0 0 0px;
@@ -1467,7 +1455,7 @@ p, .textwidget {
     margin: 0 0 5px;
 }
 .kadima_comment_title h3 {
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 30px;
     line-height: 25px;
     margin: 0 0 -2px;
@@ -1496,14 +1484,14 @@ p, .textwidget {
     padding: 20px;
 }
 .kadima_comment_detail_title {
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
     margin: 0px 0 5px;
 }
 .kadima_comment_detail p {
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 25px;
     margin: 0 0 20px;
@@ -1515,7 +1503,7 @@ p, .textwidget {
     font-size: 14px;
     display: block;
     font-weight: 600;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .reply {
     font-family: 'Roboto', sans-serif;
@@ -1542,7 +1530,7 @@ p, .textwidget {
     float: none;
 }
 .kadima_comment_form_section h2 {
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 30px;
     letter-spacing: 1px;
     line-height: 25px;
@@ -1555,7 +1543,7 @@ p, .textwidget {
     top: 5px;
 }
 .kadima_comment_form_section label {
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 20px;
     margin: 0 0 11px;
@@ -1591,7 +1579,7 @@ p, .textwidget {
 }
 .kadima_send_button, #kadima_send_button {
     font-weight: 600;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     display: inline-block;
     padding: 15px 40px;
     margin-bottom: 0;
@@ -1815,17 +1803,6 @@ p, .textwidget {
     background-position: 0 -100%;
     color: #fff;
 }
-.kadima_callout_shadow {
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 54px;
-    z-index: 99;
-    width: 100%;
-    background-size: 100% 100%;
-    margin-top: 40px;
-    background: url('./images/shadow3.png') center center no-repeat;
-}
 
 /***** Footer widget Area *****************************************************************
 ***************************************************************************************/
@@ -1835,7 +1812,7 @@ p, .textwidget {
 }
 .kadima_footer_widget_area h6, .kadima_footer_widget_column .textwidget {
     color: #f2f2f2;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 27px;
     margin-top: 25px;
@@ -1843,7 +1820,7 @@ p, .textwidget {
 .kadima_footer_widget_area p {
     font-size: 13px;
     line-height: 22px;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .kadima_footer_widget_area h6 {
     color: #95a5a6;
@@ -1866,7 +1843,7 @@ p, .textwidget {
     text-shadow: 0px 1px 2px #2a2a2a;
 }
 .kadima_footer_widget_title {
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 24px;
     margin: 0px 0px 25px 0px;
     line-height: 25px;
@@ -1876,7 +1853,7 @@ p, .textwidget {
     margin-bottom: 50px;
 }
 .kadima_footer_widget_column address {
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 25px;
 }
@@ -1904,7 +1881,7 @@ p, .textwidget {
 }
 .kadima_footer_widget_link a {
     display: block;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 13px;
     line-height: 20px;
     margin: 0 0 10px;
@@ -1926,7 +1903,7 @@ p, .textwidget {
     padding: 10px 0 0px;
 }
 .kadima_footer_area p {
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     line-height: 20px;
     font-size: 13px;
     bottom: 0;
@@ -2346,4 +2323,636 @@ table td {
     width: auto;
     z-index: 100000;
     /* Above WP toolbar. */
+}
+
+@media (min-width:1200px) {
+    .kadima_gallery_page .col-md-3 {
+        width: 25%;
+    }
+    .navbar {
+        margin-bottom: 0px;
+    }
+    #kadima_nav_top.affix {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        border-bottom: 2px solid #F7F5F5;
+        z-index: 9999;
+    }
+    .carousel-caption {
+        top: 25%;
+    }
+    .boxed .carousel-caption {
+        top: 20%;
+    }
+}
+@media (min-width:992px) and (max-width:1199px) {
+    #kadima_nav_top.affix {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        border-bottom: 2px solid #F7F5F5;
+        z-index: 99997;
+        left: 0;
+    }
+}
+
+/* This Media screen css called for All Hc Pages Element---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
+    .kadima_gallery_page .col-md-3 {
+        width: 25%;
+    }
+    .post-content-wrap {
+        width: 83%;
+    }
+    .post-content-wrap-right {
+        width: 83%;
+    }
+    .navbar {
+        margin-bottom: 0px;
+    }
+    #kadima_nav_top.affix {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        border-bottom: 2px solid #F7F5F5;
+        z-index: 99997;
+        left: 0;
+    }
+    .kadima_gallery_blog {
+        width: 33.3%;
+        margin-right: 0;
+        margin-bottom: 0;
+        float: left;
+    }
+}
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+    .logo {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
+    .head-contact-info {
+        display: block;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 2px;
+        padding-left: 0;
+    }
+    .social {
+        display: block;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 0px;
+    }
+    .navbar-default .navbar-nav> li> a {
+        color: #000;
+        border-radius: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+        text-transform: uppercase;
+        font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .navbar {
+        margin-bottom: 0px;
+    }
+    #kadima_nav_top.affix {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        border-bottom: 2px solid #F7F5F5;
+        z-index: 99997;
+        left: 0;
+    }
+    .carousel-caption {
+        top: 40px;
+    }
+    .carousel-text h1 {
+        font-size: 1.4em;
+        padding: 10px;
+    }
+    .carousel-list li {
+        color: #fff;
+        font-size: 0.9em;
+        margin-bottom: 10px;
+        overflow: hidden;
+        font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .carousel-list {
+        top: 60px;
+        margin: 0px auto;
+    }
+    .kadima_callout_area {
+        text-align: center;
+    }
+    .kadima_callout_area p {
+        margin-bottom: 20px;
+        padding: 0px;
+    }
+    .kadima_callout_btn {
+        float: none;
+    }
+    /*** blog full width **/
+    .kadima_sidebar_left_side {
+        float: none;
+    }
+    .kadima_blog_right_side {
+        float: none;
+    }
+    .post-content-wrap {
+        width: 100%;
+    }
+    .post-content-wrap-right {
+        width: 100%;
+    }
+    .blog-date-left {
+        display: flex;
+        margin-bottom: 0px;
+    }
+    .blog-date-right {
+        display: flex;
+        margin-bottom: 0px;
+    }
+    .kadima_fuul_blog_detail_padding {
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    .kadima_blog_full .kadima_blog_thumb_wrapper_showcase {
+        margin-bottom: 0px;
+    }
+    .navbar-collapse {
+        max-height: none;
+    }
+    .kadima_project_section .caroufredsel_wrapper {
+        height: 350px !important;
+    }
+    .kadima_client_area .caroufredsel_wrapper {
+        height: 250px !important;
+    }
+    .kadima_project_detail_related_projet .caroufredsel_wrapper {
+        height: 350px !important;
+    }
+    /** kadima footer  copyright area ***/
+    .kadima_footer_area {
+        text-align: center;
+    }
+    .kadima_footer_copyright_info {
+        float: none;
+    }
+    .kadima_footer_social_div {
+        float: none;
+    }
+    /** contact us page **/
+    .kadima_contact_form_fields {
+        padding-right: 15px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-right: 0px solid #E5E5E5;
+    }
+    .kadima_contact_info {
+        padding-left: 15px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    /* gallery */
+    .kadima_gallery_blog {
+        width: 33.3%;
+        margin-right: 0;
+        margin-bottom: 0;
+        float: left;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+    .carousel-text .kadima_blog_read_btn {
+        display: none;
+    }
+    .carousel-caption {
+        top: 20%;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .dropdown-menu {
+        width: 100%;
+        float: none;
+        position: static !important;
+    }
+    .logo {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
+    .head-contact-info {
+        display: block;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 2px;
+        padding-left: 0;
+    }
+    .social {
+        display: block;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 0px;
+    }
+    .carousel-caption {
+        top: 15px;
+    }
+    .carousel-text h1 {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    .carousel-list li {
+        color: #fff;
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        font-family: 'Abel', sans-serif;
+        text-transform: uppercase;
+    }
+    .carousel-list {
+        top: 60px;
+        margin: 0px auto;
+    }
+    .kadima_callout_area {
+        text-align: center;
+    }
+    .kadima_callout_area p {
+        margin-bottom: 20px;
+        padding: 0px;
+    }
+    .kadima_callout_btn {
+        float: none;
+    }
+    /**** blog full width: ***/
+    .kadima_sidebar_left_side {
+        float: none;
+    }
+    .kadima_blog_right_side {
+        float: none;
+    }
+    .post-content-wrap {
+        width: 100%;
+    }
+    .post-content-wrap-right {
+        width: 100%;
+    }
+    .blog-date-left {
+        display: flex;
+        margin-bottom: 0px;
+    }
+    .blog-date-right {
+        display: flex;
+        margin-bottom: 0px;
+    }
+    .kadima_fuul_blog_detail_padding {
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    .kadima_blog_full .kadima_blog_thumb_wrapper_showcase {
+        margin-bottom: 0px;
+    }
+    .navbar-collapse {
+        max-height: none;
+    }
+    .kadima_project_section .caroufredsel_wrapper {
+        height: 350px !important;
+    }
+    .kadima_client_area .caroufredsel_wrapper {
+        height: 260px !important;
+    }
+    .kadima_project_detail_related_projet .caroufredsel_wrapper {
+        height: 350px !important;
+    }
+    /*** comment section **/
+    .kadima_comment_box .media-body {
+        float: left;
+    }
+    /** kadima footer  copyright area ***/
+    .kadima_footer_area {
+        text-align: center;
+    }
+    .kadima_footer_copyright_info {
+        float: none;
+    }
+    .kadima_footer_social_div {
+        float: none;
+    }
+    /** contact us page **/
+    .kadima_contact_form_fields {
+        padding-right: 15px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-right: 0px solid #E5E5E5;
+    }
+    .kadima_contact_info {
+        padding-left: 15px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    /* gallery */
+    .kadima_gallery_blog {
+        width: 49.9%;
+        margin-right: 0;
+        margin-bottom: 0;
+        float: left;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+    .carousel-text .kadima_blog_read_btn {
+        display: none;
+    }
+    .carousel-caption {
+        top: 20%;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+    .dropdown-menu {
+        width: 100%;
+        float: none;
+        position: static !important;
+    }
+    /*.carousel-list li {	display:none; } */
+    .carousel-text h1 {
+        margin: 0 0 0px 0;
+        padding: 5px;
+        font-size: 7px;
+        font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        line-height: .line-height: 8px;
+        ;
+    }
+    .carousel-text .kadima_blog_read_btn {
+        font-size: 7px;
+        display: inline-block;
+        padding: 3px;
+        ;
+    }
+    .carousel-list li {
+        font-size: 7px;
+        overflow: hidden;
+        padding: 5px;
+        line-height: 8px;
+        display: block;
+        color: #fff;
+        font-size: 8px;
+        line-height: 8px;
+        margin-bottom: 5px;
+        overflow: hidden;
+        font-family: 'Abel', sans-serif;
+        text-transform: uppercase;
+    }
+    /* .carousel-caption{
+	top:10px;
+	} */
+    /*** blog full width **/
+    .kadima_sidebar_left_side {
+        float: none;
+    }
+    .kadima_blog_right_side {
+        float: none;
+    }
+    .blog-date-left {
+        display: flex;
+        margin-bottom: 0px;
+    }
+    .blog-date-right {
+        display: flex;
+        margin-bottom: 0px;
+    }
+    .post-content-wrap {
+        width: 100%;
+    }
+    .post-content-wrap-right {
+        width: 100%;
+    }
+    .kadima_fuul_blog_detail_padding {
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    .kadima_blog_full .kadima_blog_thumb_wrapper_showcase {
+        margin-bottom: 0px;
+    }
+    .navbar-collapse {
+        max-height: none;
+    }
+    .kadima_project_section .caroufredsel_wrapper {
+        height: 400px !important;
+    }
+    .kadima_project_detail_related_projet .caroufredsel_wrapper {
+        height: 400px !important;
+    }
+    /** kadima footer  copyright area ***/
+    .kadima_footer_area {
+        text-align: center;
+    }
+    .kadima_footer_copyright_info {
+        float: none;
+    }
+    .kadima_footer_social_div {
+        float: none;
+    }
+    /** contact us page **/
+    .kadima_contact_form_fields {
+        padding-right: 15px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-right: 0px solid #E5E5E5;
+    }
+    .kadima_contact_info {
+        padding-left: 15px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+    .carousel-caption {
+        top: 20%;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+    .kadima_project_section .caroufredsel_wrapper {
+        height: 450px !important;
+    }
+    .kadima_client_area .caroufredsel_wrapper {
+        height: 300px !important;
+    }
+    .kadima_project_detail_related_projet .caroufredsel_wrapper {
+        height: 450px !important;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 480px) {
+    .head-contact-info li {
+        float: left;
+        padding-bottom: 5px;
+        width: 100%;
+    }
+    .logo {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
+    .head-contact-info {
+        display: block;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 2px;
+        padding-left: 0;
+    }
+    .social {
+        display: block;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 0px;
+    }
+    .carousel-text h1 {
+        margin-top: -10px;
+        font-size: 0.8em;
+    }
+    /* .carousel-list li {	display:none;	} */
+    .carousel-list li {
+        color: #fff;
+        font-size: 8px;
+        line-height: 8px;
+        margin-bottom: 5px;
+        overflow: hidden;
+        font-family: 'Abel', sans-serif;
+        text-transform: uppercase;
+    }
+    .carousel-caption {
+        top: 10px;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+    .kadima_callout_area {
+        text-align: center;
+    }
+    .kadima_callout_area p {
+        margin-bottom: 20px;
+        padding: 0px;
+    }
+    .kadima_callout_btn {
+        float: none;
+    }
+    .kadima_sidebar_left_side {
+        float: none;
+    }
+    .kadima_blog_right_side {
+        float: none;
+    }
+    /** blog full width ***/
+    .post-content-wrap {
+        width: 100%;
+    }
+    .post-content-wrap-right {
+        width: 100%;
+    }
+    .blog-date-left {
+        display: flex;
+        margin-bottom: 0px;
+    }
+    .blog-date-left li {
+        width: 60px;
+        height: 60px;
+    }
+    .blog-date-right {
+        display: flex;
+        margin-bottom: 0px;
+    }
+    .blog-date-right li {
+        width: 60px;
+        height: 60px;
+    }
+    .kadima_post_date {
+        padding-top: 6px;
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-bottom: 4px;
+    }
+    .kadima_post_date span.date {
+        font-size: 30px;
+        line-height: 25px;
+    }
+    .kadima_post_date h6 {
+        font-size: 10px;
+        line-height: 10px;
+        margin-top: 4px;
+    }
+    .kadima_post_author img {
+        height: 60px !important;
+    }
+    .kadima_blog_comment {
+        width: 60px;
+        padding-top: 6px;
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-bottom: 6px;
+    }
+    .kadima_blog_comment a {
+        color: #999999;
+    }
+    .kadima_blog_comment i {
+        font-size: 30px;
+        line-height: 25px;
+    }
+    .kadima_blog_comment h6 {
+        font-size: 12px;
+        margin-top: 4px;
+    }
+    .kadima_fuul_blog_detail_padding {
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    .kadima_blog_full .kadima_blog_thumb_wrapper_showcase {
+        margin-bottom: 0px;
+    }
+    .navbar-collapse {
+        max-height: none;
+    }
+    .kadima_client_area .caroufredsel_wrapper {
+        height: 300px !important;
+    }
+    /*** comment section **/
+    .kadima_comment_box .media-body {
+        float: left;
+    }
+    /** kadima footer  copyright area ***/
+    .kadima_footer_area {
+        text-align: center;
+    }
+    .kadima_footer_copyright_info {
+        float: none;
+    }
+    .kadima_footer_social_div {
+        float: none;
+    }
+    /* gallery */
+    .kadima_gallery_blog {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 0;
+        float: left;
+    }
+    .carousel-text .kadima_blog_read_btn {
+        display: none;
+    }
 }

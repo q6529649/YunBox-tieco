@@ -19,3 +19,9 @@ jQuery().waypoint && jQuery("body").imagesLoaded(function () {
 		function imageLoaded(){
 			console.log('image has been loaded...');
 		}
+	//
+	var $nav=jQuery('.prolist');
+	$nav.children('li').mouseenter(function(){
+		jQuery(this).addClass("cur").siblings().removeClass("cur");
+	})
+	$nav.children('li').eq(0).mouseenter();

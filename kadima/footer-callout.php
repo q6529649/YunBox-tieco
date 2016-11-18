@@ -12,8 +12,6 @@
 			<a href="<?php echo esc_url($wl_theme_options['fc_btn_link']); ?>" class="kadima_callout_btn"><?php echo esc_attr($wl_theme_options['fc_btn_txt']); ?></a>
 			</div>
 			<?php } ?>
-		</div>
-		
+		</div>		
 	</div>
-	<div class="kadima_callout_shadow"></div>
 </div>

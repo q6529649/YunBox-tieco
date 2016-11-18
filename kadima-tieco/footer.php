@@ -8,7 +8,7 @@
 		                if($wl_theme_options['info_tel']) { echo '&nbsp;&nbsp;&nbsp;&nbsp;Tel:'.esc_attr($wl_theme_options['info_tel']); }
 		                if($wl_theme_options['info_fax']) { echo '&nbsp;&nbsp;&nbsp;&nbsp;Fax:'.esc_attr($wl_theme_options['info_fax']); }
 		                if($wl_theme_options['info_mail']) { echo '&nbsp;&nbsp;&nbsp;&nbsp;E-mail:'.esc_attr($wl_theme_options['info_mail']); }
-		                if($wl_theme_options['info_support']) { echo '&nbsp;&nbsp;&nbsp;&nbsp;Power by:'.esc_attr($wl_theme_options['info_support']); }
+		                if($wl_theme_options['info_support']) { echo '&nbsp;&nbsp;&nbsp;&nbsp;Power by:'.$wl_theme_options['info_support']; }
 		            ?>
 		        </p>
 				<?php if($wl_theme_options['footer_section_social_media_enbled'] == '1') { ?>
