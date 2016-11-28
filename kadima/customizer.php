@@ -1,6 +1,6 @@
 <?php
-add_action( 'customize_register', 'kadima_gl_customizer' );
-function kadima_gl_customizer( $wp_customize ) {
+add_action( 'customize_register', 'kadima_customizer' );
+function kadima_customizer( $wp_customize ) {
 	wp_enqueue_style('customizr', WL_TEMPLATE_DIR_URI .'/css/customizr.css');
 	$ImageUrl1 = esc_url(get_template_directory_uri() ."/images/1.png");
 	$ImageUrl2 = esc_url(get_template_directory_uri() ."/images/2.png");
@@ -596,7 +596,7 @@ function kadima_gl_customizer( $wp_customize ) {
 	);
 	$wp_customize->add_control( 'show_blog',
         array(
-    		'label'        => __( 'Enable Social Media Icons in Header', 'kadima' ),
+    		'label'        => __( 'Enable Latest News in Header', 'kadima' ),
     		'type'=>'checkbox',
     		'section'    => 'blog_section',
     		'settings'   => 'kadima_options[show_blog]'

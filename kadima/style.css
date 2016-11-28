@@ -1314,6 +1314,7 @@ p, .textwidget {
 .kadima_sidebar_widget ul li a, .kadima_footer_widget_column ul li a {
     position: relative;
 }
+/*
 .kadima_sidebar_widget ul li a:before, .kadima_footer_widget_column ul li a:before {
     position: absolute;
     font-family: FontAwesome;
@@ -1321,6 +1322,7 @@ p, .textwidget {
     left: -14px;
     content: "\f105";
 }
+*/
 .kadima_footer_widget_column ul li, .kadima_footer_widget_column ul#recentcomments li a {
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
     font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
