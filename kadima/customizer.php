@@ -48,6 +48,7 @@ function kadima_customizer( $wp_customize ) {
 		'section'    => 'general_sec',
 		'settings'   => 'kadima_options[_frontpage]',
 	) );
+    /* Logo */
 	$wp_customize->add_setting(
 		'kadima_options[upload_image_logo]',
 		array(
@@ -619,7 +620,124 @@ function kadima_customizer( $wp_customize ) {
     		'settings'   => 'kadima_options[blog_title]',
     	)
     );
-	/* Social options */
+	/* About Option */
+	$wp_customize->add_section('about_section',array(
+    	'title'=>__('About Options','kadima'),
+    	'panel'=>'kadima_theme_option',
+    	'capability'=>'edit_theme_options',
+        'priority' => 35
+	) );
+	$wp_customize->add_setting(
+	   'kadima_options[show_about]',
+		array(
+		'default'=>esc_attr($wl_theme_options['show_about']),
+		'type'=>'option',
+		'sanitize_callback'=>'kadima_sanitize_checkbox',
+		'capability'=>'edit_theme_options'
+		)
+	);
+	$wp_customize->add_control( 'show_about',
+        array(
+    		'label'        => __( 'Enable About in Header', 'kadima' ),
+    		'type'=>'checkbox',
+    		'section'    => 'about_section',
+    		'settings'   => 'kadima_options[show_about]'
+    	)
+    );
+	$wp_customize->add_setting(
+		'kadima_options[about_title]',
+		array(
+			'type'    => 'option',
+			'default'=>$wl_theme_options['about_title'],
+			'capability'        => 'edit_theme_options',
+			'sanitize_callback'=>'kadima_sanitize_text',
+		)
+	);
+	$wp_customize->add_control( 'about_title',
+        array(
+    		'label'        => __( 'About Title', 'kadima' ),
+    		'type'=>'text',
+    		'section'    => 'about_section',
+    		'settings'   => 'kadima_options[about_title]',
+    	)
+    );
+	$wp_customize->add_setting(
+		'kadima_options[about_description]',
+		array(
+			'type'    => 'option',
+			'default'=>$wl_theme_options['about_description'],
+			'sanitize_callback'=>'kadima_sanitize_text',
+			'capability'        => 'edit_theme_options',
+		)
+	);
+	$wp_customize->add_control( 'about_description', array(
+		'label'        => __( 'About Description', 'kadima' ),
+		'type'=>'textarea',
+		'section'    => 'about_section',
+		'settings'   => 'kadima_options[about_description]'
+	) );
+    for($i=1;$i<=12;$i++){
+        $wp_customize->add_setting(
+			'kadima_options[about_slide_img_'.$i.']',
+			array(
+				'type'    => 'option',
+				'default'=> $wl_theme_options['about_slide_img_'.$i],
+				'capability' => 'edit_theme_options',
+				'sanitize_callback'=>'esc_url_raw',
+			)
+		);
+		$wp_customize->add_setting(
+			'kadima_options[about_slide_title_'.$i.']',
+			array(
+				'type'    => 'option',
+				'default'=>$wl_theme_options['about_slide_title_'.$i],
+				'capability' => 'edit_theme_options',
+				'sanitize_callback'=>'kadima_sanitize_text',
+			)
+		);
+		$wp_customize->add_setting(
+			'kadima_options[about_slide_desc_'.$i.']',
+			array(
+				'type'    => 'option',
+				'default'=>$wl_theme_options['about_slide_desc_'.$i],
+				'capability' => 'edit_theme_options',
+				'sanitize_callback'=>'kadima_sanitize_text',
+			)
+		);
+		$wp_customize->add_setting(
+			'kadima_options[about_slide_link_'.$i.']',
+			array(
+				'type'    => 'option',
+				'default'=>$wl_theme_options['about_slide_link_'.$i],
+				'capability' => 'edit_theme_options',
+				'sanitize_callback'=>'esc_url_raw',
+			)
+		);
+    	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'about_slide_img_'.$i, array(
+    		'label'        => __( 'About Slide Image '.$count12[$i-1], 'kadima' ),
+    		'section'    => 'about_section',
+    		'settings'   => 'kadima_options[about_slide_'.$i.'_img]'
+    	) ) );
+    	$wp_customize->add_control( 'about_slide_title_'.$i, array(
+    		'label'      => __( 'About Slide Title '.$count12[$i-1], 'kadima'),
+    		'type'       =>'text',
+    		'section'    => 'about_section',
+    		'settings'   => 'kadima_options[about_slide_'.$i.'_title]'
+    	) );
+		$wp_customize->add_control( 'about_slide_description_'.$i, array(
+    		'label'      => __( 'About Slide Description '.$count12[$i-1], 'kadima'),
+    		'type'       =>'textarea',
+    		'section'    => 'about_section',
+    		'settings'   => 'kadima_options[about_slide_'.$i.'_description]'
+    	) );
+    	$wp_customize->add_control( 'about_slide_link_'.$i, array(
+    		'label'      => __( 'About Slide Link '.$count12[$i-1], 'kadima' ),
+    		'type'       =>'url',
+    		'section'    => 'about_section',
+    		'settings'   => 'kadima_options[about_slide_'.$i.'_link]'
+    	) );
+	}
+    /* Social options */
 	$wp_customize->add_section('social_section',array(
     	'title'=>__("Social Options",'kadima'),
     	'panel'=>'kadima_theme_option',

@@ -670,7 +670,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     text-transform: uppercase;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .dropdown-menu> li> a {
     display: block;
