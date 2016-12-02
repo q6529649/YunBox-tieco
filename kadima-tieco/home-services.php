@@ -18,23 +18,23 @@
 			<?php for($i=1; $i<6; $i++ ) { ?>
 			<div class="col-xs-12 col-sm-2 service">
 				<div class="kadima_service_area appear-animation bounceIn appear-animation-visible">
-					<?php if($wl_theme_options['service_'.$i.'_icons'] !='') { ?>
+					<?php if($wl_theme_options['service_icons_'.$i] !='') { ?>
                         <div class="kadima_service_iocn">
-							<a href="<?php echo esc_url($wl_theme_options['service_'.$i.'_link']); ?>">
-                            	<i class="<?php echo esc_attr($wl_theme_options['service_'.$i.'_icons']); ?>"></i>
+							<a href="<?php echo esc_url($wl_theme_options['service_link_'.$i]); ?>">
+                            	<i class="<?php echo esc_attr($wl_theme_options['service_icons_'.$i]); ?>"></i>
 							</a>
                         </div>
                     <?php } ?>
 					<div class="kadima_service_detail media-body">
-						<?php if($wl_theme_options['service_'.$i.'_title'] !='') { ?>
+						<?php if($wl_theme_options['service_title_'.$i] !='') { ?>
 							<h3>
-								<a href="<?php echo esc_url($wl_theme_options['service_'.$i.'_link']); ?>">
-									<?php echo esc_attr($wl_theme_options['service_'.$i.'_title']); ?>
+								<a href="<?php echo esc_url($wl_theme_options['service_link_'.$i]); ?>">
+									<?php echo esc_attr($wl_theme_options['service_title_'.$i]); ?>
 								</a>
 							</h3>
                             <hr style="border:none;border-top:1px dashed #f9b62a;" />
 						<?php } ?>
-						<?php if($wl_theme_options['service_'.$i.'_text'] !='') { ?><p><?php echo apply_filters('the_content', $wl_theme_options['service_'.$i.'_text'], true); ?></p><?php } ?>
+						<?php if($wl_theme_options['service_text_'.$i] !='') { ?><p><?php echo apply_filters('the_content', $wl_theme_options['service_text_'.$i], true); ?></p><?php } ?>
 					</div>
 				</div>
 			</div>

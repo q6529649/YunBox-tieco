@@ -21,7 +21,7 @@ Text Domain: kadima
 
 body {
     /* padding:0 30px;*/
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     background-color: #fff;
 }
 #wrapper {
@@ -39,11 +39,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     color: #666;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
 p, .textwidget {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 26px;
 }
@@ -70,11 +70,11 @@ p, .textwidget {
 .logo {
     text-align: left;
     padding-bottom: 0px;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .logo a {
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
     font-size: 50px;
     color: #fff;
@@ -83,7 +83,7 @@ p, .textwidget {
     color: #fff;
 }
 .logo p {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     margin-top: 5px;
     color: #fff;
 }
@@ -186,7 +186,7 @@ p, .textwidget {
     font-weight: 500;
     text-transform: uppercase;
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .kadima_heading_title2 {
     display: block;
@@ -198,7 +198,7 @@ p, .textwidget {
     letter-spacing: 1px;
     padding-bottom: 10px;
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .kadima_heading_title2 h3 {
     font-size: 22px;
@@ -230,7 +230,7 @@ p, .textwidget {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 3em;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
@@ -261,7 +261,7 @@ p, .textwidget {
     margin-bottom: 10px;
     overflow: hidden;
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     padding: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -336,7 +336,7 @@ p, .textwidget {
     word-wrap: break-word;
     margin: 0 0 10px;
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .kadima_service_detail p {
     font-size: 16px;
@@ -376,7 +376,7 @@ p, .textwidget {
     letter-spacing: normal;
     line-height: 27px;
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .kadima_service_detail_2 p {
     font-size: 18px;
@@ -526,7 +526,7 @@ p, .textwidget {
     border-radius: 0;
     padding: 0 0 15px;
     text-align: center;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
 .kadima_home_portfolio_caption h3 {
@@ -535,7 +535,7 @@ p, .textwidget {
     margin: 0;
     padding: 9px 3px 0px;
     line-height: 35px;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .kadima_home_portfolio_caption small {
     font-size: 13px;
@@ -644,7 +644,7 @@ p, .textwidget {
 .kadima-project-description p {
     text-align: left;
     font-size: 16px;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-weight: 500;
 }
 .kadima-related-project {
@@ -687,7 +687,7 @@ p, .textwidget {
     padding-left: 10px;
 }
 .kadima-project-detail-sidebar p {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -696,7 +696,7 @@ p, .textwidget {
     padding-top: 0px;
 }
 .kadima-project-detail-sidebar p small {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 15px;
     padding-left: 0px;
     display: block;
@@ -705,7 +705,7 @@ p, .textwidget {
 .kadima-project-detail-sidebar .launch-kadima-project a {
     display: inline-block;
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 20px;
     margin: 15px 0 15px;
@@ -1092,7 +1092,7 @@ p, .textwidget {
     border-radius: 0px;
     display: block;
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     width: 100px;
     padding-top: 10px;
     padding-left: 10px;
@@ -1139,7 +1139,7 @@ p, .textwidget {
     width: 100%;
 }
 .kadima_blog_post_content p {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 27px;
     margin: 0 0 20px;
@@ -1192,7 +1192,7 @@ p, .textwidget {
     margin: 0 0 0px !important;
 }
 .kadima_recent_widget_post h3, .kadima_footer_widget_column ul li {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 2px;
@@ -1215,7 +1215,7 @@ p, .textwidget {
     display: block;
 }
 .kadima_recent_widget_post_date {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 13px;
     line-height: 20px;
     color: #ffffff;
@@ -1243,7 +1243,7 @@ p, .textwidget {
 }
 .kadima_sidebar_widget .kadima_recent_widget_post h3 {
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 20px;
     margin-bottom: 2px;
@@ -1252,7 +1252,7 @@ p, .textwidget {
 .kadima_sidebar_widget h3 {
     display: inline-block;
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 5px;
@@ -1298,7 +1298,7 @@ p, .textwidget {
     border: 0 none;
     cursor: pointer;
     display: inline-block;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: normal;
     line-height: 20px;
@@ -1325,7 +1325,7 @@ p, .textwidget {
 */
 .kadima_footer_widget_column ul li, .kadima_footer_widget_column ul#recentcomments li a {
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 20px;
     transition: all 0.2s ease 0s;
@@ -1333,7 +1333,7 @@ p, .textwidget {
 .kadima_sidebar_link p a, .kadima_sidebar_widget ul li a {
     transition: all 0.4s ease 0s;
     display: block;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 20px;
 }
@@ -1348,7 +1348,7 @@ p, .textwidget {
 }
 .kadima_sidebar_link p, .kadima_sidebar_widget ul li {
     display: block;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     transition: all 0.4s ease 0s;
     padding-bottom: 10px;
@@ -1370,7 +1370,7 @@ p, .textwidget {
     cursor: pointer;
     display: inline-block;
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 14px !important;
     line-height: 20px;
     margin: 0 5px 10px 0;
@@ -1440,7 +1440,7 @@ p, .textwidget {
     color: #fff;
 }
 .kadima_author_detail_wrapper p {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 25px;
     margin: 0 0 0px;
@@ -1457,7 +1457,7 @@ p, .textwidget {
     margin: 0 0 5px;
 }
 .kadima_comment_title h3 {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 30px;
     line-height: 25px;
     margin: 0 0 -2px;
@@ -1486,14 +1486,14 @@ p, .textwidget {
     padding: 20px;
 }
 .kadima_comment_detail_title {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
     margin: 0px 0 5px;
 }
 .kadima_comment_detail p {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 25px;
     margin: 0 0 20px;
@@ -1505,7 +1505,7 @@ p, .textwidget {
     font-size: 14px;
     display: block;
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .reply {
     font-family: 'Roboto', sans-serif;
@@ -1532,7 +1532,7 @@ p, .textwidget {
     float: none;
 }
 .kadima_comment_form_section h2 {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 30px;
     letter-spacing: 1px;
     line-height: 25px;
@@ -1545,7 +1545,7 @@ p, .textwidget {
     top: 5px;
 }
 .kadima_comment_form_section label {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 20px;
     margin: 0 0 11px;
@@ -1581,7 +1581,7 @@ p, .textwidget {
 }
 .kadima_send_button, #kadima_send_button {
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     display: inline-block;
     padding: 15px 40px;
     margin-bottom: 0;
@@ -1814,7 +1814,7 @@ p, .textwidget {
 }
 .kadima_footer_widget_area h6, .kadima_footer_widget_column .textwidget {
     color: #f2f2f2;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 27px;
     margin-top: 25px;
@@ -1822,7 +1822,7 @@ p, .textwidget {
 .kadima_footer_widget_area p {
     font-size: 13px;
     line-height: 22px;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .kadima_footer_widget_area h6 {
     color: #95a5a6;
@@ -1845,7 +1845,7 @@ p, .textwidget {
     text-shadow: 0px 1px 2px #2a2a2a;
 }
 .kadima_footer_widget_title {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 24px;
     margin: 0px 0px 25px 0px;
     line-height: 25px;
@@ -1855,7 +1855,7 @@ p, .textwidget {
     margin-bottom: 50px;
 }
 .kadima_footer_widget_column address {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 25px;
 }
@@ -1883,7 +1883,7 @@ p, .textwidget {
 }
 .kadima_footer_widget_link a {
     display: block;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 13px;
     line-height: 20px;
     margin: 0 0 10px;
@@ -1905,7 +1905,7 @@ p, .textwidget {
     padding: 10px 0 0px;
 }
 .kadima_footer_area p {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+    font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     line-height: 20px;
     font-size: 13px;
     bottom: 0;
@@ -2417,7 +2417,7 @@ table td {
         padding-left: 8px;
         padding-right: 8px;
         text-transform: uppercase;
-        font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+        font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
         font-weight: 600;
         font-size: 15px;
     }
@@ -2444,7 +2444,7 @@ table td {
         font-size: 0.9em;
         margin-bottom: 10px;
         overflow: hidden;
-        font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+        font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
         font-weight: 600;
         text-transform: uppercase;
     }
@@ -2690,7 +2690,7 @@ table td {
         margin: 0 0 0px 0;
         padding: 5px;
         font-size: 7px;
-        font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
+        font-family: "alwyn-new-web",'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
         color: #fff;
         text-transform: uppercase;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);

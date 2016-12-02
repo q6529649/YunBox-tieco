@@ -11,25 +11,24 @@
 	require( WL_TEMPLATE_DIR_CORE . '/scripts/css_js.php' );
 	require( WL_TEMPLATE_DIR_CORE . '/comment-function.php' );
 	require(dirname(__FILE__).'/customizer.php');
-
 	//Sane Defaults
-	function kadima_default_settings()
-    {
-    	$ImageUrl =  esc_url(get_template_directory_uri() ."/images/1.png");
-    	$ImageUrl2 = esc_url(get_template_directory_uri() ."/images/2.png");
-    	$ImageUrl3 = esc_url(get_template_directory_uri() ."/images/3.png");
-    	$ImageUrl4 = esc_url(get_template_directory_uri() ."/images/portfolio1.png");
-    	$ImageUrl5 = esc_url(get_template_directory_uri() ."/images/portfolio2.png");
-    	$ImageUrl6 = esc_url(get_template_directory_uri() ."/images/portfolio3.png");
-    	$ImageUrl7 = esc_url(get_template_directory_uri() ."/images/portfolio4.png");
-    	$ImageUrl8 = esc_url(get_template_directory_uri() ."/images/portfolio1.png");
-    	$ImageUrl9 = esc_url(get_template_directory_uri() ."/images/portfolio2.png");
-    	$ImageUrl10 = esc_url(get_template_directory_uri() ."/images/portfolio3.png");
-    	$ImageUrl11 = esc_url(get_template_directory_uri() ."/images/portfolio4.png");
-    	$ImageUrl12 = esc_url(get_template_directory_uri() ."/images/portfolio1.png");
-    	$ImageUrl13 = esc_url(get_template_directory_uri() ."/images/portfolio2.png");
-    	$ImageUrl14 = esc_url(get_template_directory_uri() ."/images/portfolio3.png");
-    	$ImageUrl15 = esc_url(get_template_directory_uri() ."/images/portfolio4.png");
+	
+	/**
+	 * 获取访问用户的语言
+	 */
+	function get_client_language(){
+		if(isset($_SERVER["HTTP_ACCEPT_LANGUAGE"])){
+
+			preg_match("/([^,;]*)/", $_SERVER["HTTP_ACCEPT_LANGUAGE"], $array_languages);
+
+			return str_replace( "_", "-", strtolower( $array_languages[0] ) );
+		}
+		return 'xx'; 
+	}
+	function kadima_default_settings() {
+	    $count12 = array('One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'TEN', 'ELEVEN', 'TWELVE');
+    	$Image_silde =  esc_url(get_template_directory_uri() .'/images/1.png');
+    	$Image_portfolio = esc_url(get_template_directory_uri() .'/images/portfolio1.png');
         $wl_theme_options = array(
 			'upload_image_logo'=>'',
 			'height'=>'55',
@@ -38,22 +37,6 @@
 			'blog_count'=>'3',
 			'upload_image_favicon'=>'',
 			'custom_css'=>'',
-			'slide_image_1' => $ImageUrl,
-			'slide_title_1' => __('', 'kadima' ),
-			'slide_desc_1' => __('', 'kadima' ),
-			'slide_btn_text_1' => __('', 'kadima' ),
-			'slide_btn_link_1' => '',
-			'slide_image_2' => $ImageUrl2,
-			'slide_title_2' => __('', 'kadima' ),
-			'slide_desc_2' => __('', 'kadima' ),
-			'slide_btn_text_2' => __('', 'kadima' ),
-			'slide_btn_link_2' => '',
-			'slide_image_3' => $ImageUrl3,
-			'slide_title_3' => __('', 'kadima' ),
-			'slide_desc_3' => __('', 'kadima' ),
-			'slide_btn_text_3' => __('', 'kadima' ),
-			'slide_btn_link_3' => '',
-			// Footer Call-Out
 			'fc_home'=>'1',
 			'fc_title' => __('', 'kadima' ),
 			'fc_btn_txt' => __('', 'kadima' ),
@@ -77,70 +60,37 @@
 			'info_support'=> __('', 'kadima' ),
             		 //
 			'service_home'=>'1',
-			'home_service_heading' => __('Title', 'kadima' ),
-			'service_1_title'=>__("One",'kadima' ),
-			'service_1_icons'=>"fa fa-database",
-			'service_1_text'=>__("There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in.", 'kadima' ),
-			'service_1_link'=>"",
-			'service_2_title'=>__('Two', 'kadima' ),
-			'service_2_icons'=>"fa fa-database",
-			'service_2_text'=>__("There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in.", 'kadima' ),
-			'service_2_link'=>"",
-			'service_3_title'=>__("Three", 'kadima' ),
-			'service_3_icons'=>"fa fa-database",
-			'service_3_text'=>__("There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in.", 'kadima' ),
-			'service_3_link'=>"",
-			'service_4_title'=>__("Four", 'kadima' ),
-			'service_4_icons'=>"fa fa-database",
-			'service_4_text'=>__("There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in.", 'kadima' ),
-			'service_4_link'=>"",
-			'service_5_title'=>__("Five", 'kadima' ),
-			'service_5_icons'=>"fa fa-database",
-			'service_5_text'=>__("There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in.", 'kadima' ),
-			'service_5_link'=>"",
-			//Portfolio Settings:
+			'home_service_heading' => __('', 'kadima' ),
 			'portfolio_home'=>'0',
 			'port_heading' => __('', 'kadima' ),
-			'port_1_img'=> $ImageUrl4,
-			'port_1_title'=>__('', 'kadima' ),
-			'port_1_link'=>'',
-			'port_2_img'=> $ImageUrl5,
-			'port_2_title'=>__('', 'kadima' ),
-			'port_2_link'=>'',
-			'port_3_img'=> $ImageUrl6,
-			'port_3_title'=>__('', 'kadima' ),
-			'port_3_link'=>'',
-			'port_4_img'=> $ImageUrl7,
-			'port_4_title'=>__('', 'kadima' ),
-			'port_4_link'=>'',
-			'port_5_img'=> $ImageUrl8,
-			'port_5_title'=>__('', 'kadima' ),
-			'port_5_link'=>'',
-			'port_6_img'=> $ImageUrl9,
-			'port_6_title'=>__('', 'kadima' ),
-			'port_6_link'=>'',
-			'port_7_img'=> $ImageUrl10,
-			'port_7_title'=>__('', 'kadima' ),
-			'port_7_link'=>'',
-			'port_8_img'=> $ImageUrl11,
-			'port_8_title'=>__('', 'kadima' ),
-			'port_8_link'=>'',
-			'port_9_img'=> $ImageUrl12,
-			'port_9_title'=>__('', 'kadima' ),
-			'port_9_link'=>'',
-			'port_10_img'=> $ImageUrl13,
-			'port_10_title'=>__('', 'kadima' ),
-			'port_10_link'=>'',
-			'port_11_img'=> $ImageUrl14,
-			'port_11_title'=>__('', 'kadima' ),
-			'port_11_link'=>'',
-			'port_12_img'=> $ImageUrl15,
-			'port_12_title'=>__('', 'kadima' ),
-			'port_12_link'=>'',
-			//BLOG Settings
 			'show_blog' => '0',
-			'blog_title'=>__('News', 'kadima' ),
+			'show_about' => '0',
+			'about_title' => __('', 'kadima' ),
+			'blog_title' => __('', 'kadima' ),
 		);
+		for($i=1;$i<=12;$i++){
+			$wl_theme_options['slide_image_'.$i] = $Image_silde;
+			$wl_theme_options['slide_title_'.$i] = __('', 'kadima' );
+			$wl_theme_options['slide_desc_'.$i] = __('', 'kadima' );
+			$wl_theme_options['slide_btn_text_'.$i] = __('', 'kadima' );
+			$wl_theme_options['slide_btn_link_'.$i] = '';
+			//
+			$wl_theme_options['service_icons_'.$i] = 'fa fa-database';
+			$wl_theme_options['service_img_'.$i] = $Image_portfolio;
+			$wl_theme_options['service_title_'.$i] = __($count12[$i-1],'kadima' );
+			$wl_theme_options['service_text_'.$i] = __('', 'kadima' );
+			$wl_theme_options['service_link_'.$i] = '';
+			//
+			$wl_theme_options['port_img_'.$i] = $Image_portfolio;
+			$wl_theme_options['port_title_'.$i] = __('', 'kadima' );
+			$wl_theme_options['port_description_'.$i] = __('', 'kadima' );
+			$wl_theme_options['port_link_'.$i] = '';
+			//
+			$wl_theme_options['about_slide_img_'.$i] = $Image_portfolio;
+			$wl_theme_options['about_slide_title_'.$i] = __('', 'kadima' );
+			$wl_theme_options['about_slide_desc_'.$i] = __('', 'kadima' );
+			$wl_theme_options['about_slide_link_'.$i] = '';
+		}
 		return apply_filters( 'kadima_options', $wl_theme_options );
     }
 	function kadima_get_options() {
@@ -208,10 +158,10 @@
     		'name' => __( 'Footer Widget Area', 'kadima' ),
     		'id' => 'footer-widget-area',
     		'description' => __( 'footer widget area', 'kadima' ),
-    		'before_widget' => '<div class="col-md-3 col-sm-6 kadima_footer_widget_column">',
+    		'before_widget' => '<div class="col-md-4 col-sm-12 kadima_footer_widget_column">',
     		'after_widget' => '</div>',
-    		'before_title' => '<div class="kadima_footer_widget_title">',
-    		'after_title' => '<div class="kadima-footer-separator"></div></div>',
+    		'before_title' => '<h3>',
+    		'after_title' => '</h3>',
     	) );
 	}
 	/* Breadcrumbs  */
@@ -423,6 +373,18 @@
 			'href'   => 'https://translate.google.com/',
 			'meta'   => array( 'target' => '_blank' ),
 		) );
+		$wp_admin_bar->add_menu( array(
+			'id'     => 'page-edit',
+			'title'  => __( '网站编辑', 'kadima' ),
+			'href'   => admin_url( '/customize.php?return=%2Fwp-admin%2Ftheme-editor.php' ),
+		) );
+		$wp_admin_bar->add_menu( array(
+			'id'     => 'page-overview',
+			'parent' => 'top-secondary',
+			'title'  => __( '预览', 'kadima' ),
+			'href'   => home_url(),
+		) );
+
     }
 	function customWp_admin_bar_add_logo() {
         global $wp_admin_bar;
@@ -465,6 +427,7 @@
 	    remove_meta_box('dashboard_quick_press', 'dashboard', 'core');			// wordpress快速发布
 	    remove_meta_box('dashboard_activity', 'dashboard', 'core');				// 活动
 		remove_meta_box('postcustom' , 'post' , 'normal'); 						// 在文章编辑界面移除自定义字段模块
+		remove_meta_box('wpseo-dashboard-overview', 'dashboard', 'core');		//
 	}
 	function customWp_rename_dashboard_widgets() {
 		global $wp_meta_boxes;

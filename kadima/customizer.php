@@ -2,21 +2,7 @@
 add_action( 'customize_register', 'kadima_customizer' );
 function kadima_customizer( $wp_customize ) {
 	wp_enqueue_style('customizr', WL_TEMPLATE_DIR_URI .'/css/customizr.css');
-	$ImageUrl1 = esc_url(get_template_directory_uri() ."/images/1.png");
-	$ImageUrl2 = esc_url(get_template_directory_uri() ."/images/2.png");
-	$ImageUrl3 = esc_url(get_template_directory_uri() ."/images/3.png");
-	$port['1'] = esc_url(get_template_directory_uri() ."/images/portfolio1.png");
-	$port['2'] = esc_url(get_template_directory_uri() ."/images/portfolio2.png");
-	$port['3'] = esc_url(get_template_directory_uri() ."/images/portfolio3.png");
-	$port['4'] = esc_url(get_template_directory_uri() ."/images/portfolio4.png");
-	$port['5'] = esc_url(get_template_directory_uri() ."/images/portfolio1.png");
-	$port['6'] = esc_url(get_template_directory_uri() ."/images/portfolio2.png");
-	$port['7'] = esc_url(get_template_directory_uri() ."/images/portfolio3.png");
-	$port['8'] = esc_url(get_template_directory_uri() ."/images/portfolio4.png");
-	$port['9'] = esc_url(get_template_directory_uri() ."/images/portfolio1.png");
-	$port['10'] = esc_url(get_template_directory_uri() ."/images/portfolio2.png");
-	$port['11'] = esc_url(get_template_directory_uri() ."/images/portfolio3.png");
-	$port['12'] = esc_url(get_template_directory_uri() ."/images/portfolio4.png");
+    $count12 = array('One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'TEN', 'ELEVEN', 'TWELVE');
 	/* Genral section */
 	$wp_customize->add_panel( 'kadima_theme_option', array(
         'title' => __( 'Theme Options','kadima' ),
@@ -124,7 +110,7 @@ function kadima_customizer( $wp_customize ) {
 	) );
 	/* Slider options */
 	$wp_customize->add_section(
-        'slider_sec',
+        'slider_section',
         array(
             'title' =>  __( 'Theme Slider Options','kadima' ),
 			'panel'=>'kadima_theme_option',
@@ -134,228 +120,82 @@ function kadima_customizer( $wp_customize ) {
 			'active_callback' => 'is_front_page',
         )
     );
-	$wp_customize->add_setting(
-		'kadima_options[slide_image_1]',
-		array(
-			'type'    => 'option',
-			'default'=>$ImageUrl1,
-			'capability' => 'edit_theme_options',
-			'sanitize_callback'=>'esc_url_raw',
-		)
-	);
-	$wp_customize->add_setting(
-		'kadima_options[slide_image_2]',
-		array(
-			'type'    => 'option',
-			'default'=>$ImageUrl2,
-			'capability' => 'edit_theme_options',
-			'sanitize_callback'=>'esc_url_raw'
-		)
-	);
-	$wp_customize->add_setting(
-		'kadima_options[slide_image_3]',
-		array(
-			'type'    => 'option',
-			'default'=>$ImageUrl3,
-			'capability' => 'edit_theme_options',
-			'sanitize_callback'=>'esc_url_raw',
-		)
-	);
-	$wp_customize->add_setting(
-		'kadima_options[slide_title_1]',
-		array(
-			'type'    => 'option',
-			'default'=>$wl_theme_options['slide_title_1'],
-			'capability' => 'edit_theme_options',
-			'sanitize_callback'=>'kadima_sanitize_text',
-		)
-	);
-	$wp_customize->add_setting(
-		'kadima_options[slide_title_2]',
-		array(
-			'type'    => 'option',
-			'default'=>$wl_theme_options['slide_title_2'],
-			'capability' => 'edit_theme_options',
-			'sanitize_callback'=>'kadima_sanitize_text',
-		)
-	);
-	$wp_customize->add_setting(
-		'kadima_options[slide_title_3]',
-		array(
-			'type'    => 'option',
-			'default'=>$wl_theme_options['slide_title_3'],
-			'capability' => 'edit_theme_options',
-			'sanitize_callback'=>'kadima_sanitize_text',
-		)
-	);
-	$wp_customize->add_setting(
-		'kadima_options[slide_desc_1]',
-		array(
-			'type'    => 'option',
-			'default'=>$wl_theme_options['slide_desc_1'],
-			'capability' => 'edit_theme_options',
-			'sanitize_callback'=>'kadima_sanitize_text',
-		)
-	);
-	$wp_customize->add_setting(
-		'kadima_options[slide_desc_2]',
-		array(
-			'type'    => 'option',
-			'default'=>$wl_theme_options['slide_desc_2'],
-			'capability' => 'edit_theme_options',
-			'sanitize_callback'=>'kadima_sanitize_text',
-		)
-	);
-	$wp_customize->add_setting(
-		'kadima_options[slide_desc_3]',
-		array(
-			'type'    => 'option',
-			'default'=>$wl_theme_options['slide_desc_3'],
-			'capability' => 'edit_theme_options',
-			'sanitize_callback'=>'kadima_sanitize_text',
-		)
-	);
-	$wp_customize->add_setting(
-		'kadima_options[slide_btn_text_1]',
-		array(
-			'type'    => 'option',
-			'default'=>$wl_theme_options['slide_btn_text_1'],
-			'capability' => 'edit_theme_options',
-			'sanitize_callback'=>'kadima_sanitize_text',
-		)
-	);
-	$wp_customize->add_setting(
-		'kadima_options[slide_btn_text_2]',
-		array(
-			'type'    => 'option',
-			'default'=>$wl_theme_options['slide_btn_text_2'],
-			'capability' => 'edit_theme_options',
-			'sanitize_callback'=>'kadima_sanitize_text',
-		)
-	);
-	$wp_customize->add_setting(
-		'kadima_options[slide_btn_text_3]',
-		array(
-			'type'    => 'option',
-			'default'=>$wl_theme_options['slide_btn_text_3'],
-			'capability' => 'edit_theme_options',
-			'sanitize_callback'=>'kadima_sanitize_text',
-		)
-	);
-	$wp_customize->add_setting(
-		'kadima_options[slide_btn_link_1]',
-		array(
-			'type'    => 'option',
-			'default'=>$wl_theme_options['slide_btn_link_1'],
-			'capability' => 'edit_theme_options',
-			'sanitize_callback'=>'esc_url_raw',
-		)
-	);
-	$wp_customize->add_setting(
-		'kadima_options[slide_btn_link_2]',
-		array(
-			'type'    => 'option',
-			'default'=>$wl_theme_options['slide_btn_link_2'],
-			'capability' => 'edit_theme_options',
-			'sanitize_callback'=>'esc_url_raw',
-		)
-	);
-	$wp_customize->add_setting(
-		'kadima_options[slide_btn_link_3]',
-		array(
-			'type'    => 'option',
-			'default'=>$wl_theme_options['slide_btn_link_3'],
-			'capability' => 'edit_theme_options',
-			'sanitize_callback'=>'esc_url_raw',
-		)
-	);
-	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'kadima_slider_image_1', array(
-		'label'        => __( 'Slider Image One', 'kadima' ),
-		'section'    => 'slider_sec',
-		'settings'   => 'kadima_options[slide_image_1]'
-	) ) );
-	$wp_customize->add_control( 'kadima_slide_title_1', array(
-		'label'        => __( 'Slider title one', 'kadima' ),
-		'type'=>'text',
-		'section'    => 'slider_sec',
-		'settings'   => 'kadima_options[slide_title_1]'
-	) );
-	$wp_customize->add_control( 'kadima_slide_desc_1', array(
-		'label'        => __( 'Slider description one', 'kadima' ),
-		'type'=>'text',
-		'section'    => 'slider_sec',
-		'settings'   => 'kadima_options[slide_desc_1]'
-	) );
-	$wp_customize->add_control( 'Slider button one', array(
-		'label'        => __( 'Slider Button Text One', 'kadima' ),
-		'type'=>'text',
-		'section'    => 'slider_sec',
-		'settings'   => 'kadima_options[slide_btn_text_1]'
-	) );
-	$wp_customize->add_control( 'kadima_slide_btnlink_1', array(
-		'label'        => __( 'Slider Button Link One', 'kadima' ),
-		'type'=>'url',
-		'section'    => 'slider_sec',
-		'settings'   => 'kadima_options[slide_btn_link_1]'
-	) );
-	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'kadima_slider_image_2', array(
-		'label'        => __( 'Slider Image Two ', 'kadima' ),
-		'section'    => 'slider_sec',
-		'settings'   => 'kadima_options[slide_image_2]'
-	) ) );
-	$wp_customize->add_control( 'kadima_slide_title_2', array(
-		'label'        => __( 'Slider Title Two', 'kadima' ),
-		'type'=>'text',
-		'section'    => 'slider_sec',
-		'settings'   => 'kadima_options[slide_title_2]'
-	) );
-	$wp_customize->add_control( 'kadima_slide_desc_2', array(
-		'label'        => __( 'Slider Description Two', 'kadima' ),
-		'type'=>'text',
-		'section'    => 'slider_sec',
-		'settings'   => 'kadima_options[slide_desc_2]'
-	) );
-	$wp_customize->add_control( 'kadima_slide_btn_2', array(
-		'label'        => __( 'Slider Button Text Two', 'kadima' ),
-		'type'=>'text',
-		'section'    => 'slider_sec',
-		'settings'   => 'kadima_options[slide_btn_text_2]'
-	) );
-	$wp_customize->add_control( 'kadima_slide_btnlink_2', array(
-		'label'        => __( 'Slider Button Link Two', 'kadima' ),
-		'type'=>'url',
-		'section'    => 'slider_sec',
-		'settings'   => 'kadima_options[slide_btn_link_2]'
-	) );
-	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'kadima_slider_image_3', array(
-		'label'        => __( 'Slider Image Three', 'kadima' ),
-		'section'    => 'slider_sec',
-		'settings'   => 'kadima_options[slide_image_3]'
-	) ) );
-	$wp_customize->add_control( 'kadima_slide_title_3', array(
-		'label'        => __( 'Slider Title Three', 'kadima' ),
-		'type'=>'text',
-		'section'    => 'slider_sec',
-		'settings'   => 'kadima_options[slide_title_3]'
-	) );
-	$wp_customize->add_control( 'kadima_slide_desc_3', array(
-		'label'        => __( 'Slider Description Three', 'kadima' ),
-		'type'=>'text',
-		'section'    => 'slider_sec',
-		'settings'   => 'kadima_options[slide_desc_3]'
-	) );
-	$wp_customize->add_control( 'kadima_slide_btn_3', array(
-		'label'        => __( 'Slider Button Text Three', 'kadima' ),
-		'type'=>'text',
-		'section'    => 'slider_sec',
-		'settings'   => 'kadima_options[slide_btn_text_3]'
-	) );
-	$wp_customize->add_control( 'kadima_slide_btnlink_3', array(
-		'label'        => __( 'Slider Button Link Three', 'kadima' ),
-		'type'=>'url',
-		'section'    => 'slider_sec',
-		'settings'   => 'kadima_options[slide_btn_link_3]'
-	) );
+    for($i=1;$i<=12;$i++){
+        $wp_customize->add_setting(
+            'kadima_options[slide_image_'.$i.']',
+            array(
+                'type' => 'option',
+                'default' => $wl_theme_options['slide_image_'.$i],
+                'capability' => 'edit_theme_options',
+                'sanitize_callback' => 'esc_url_raw',
+            )
+        );
+        $wp_customize->add_setting(
+    		'kadima_options[slide_title_'.$i.']',
+    		array(
+    			'type' => 'option',
+    			'default' => $wl_theme_options['slide_title_'.$i],
+    			'capability' => 'edit_theme_options',
+    			'sanitize_callback' => 'kadima_sanitize_text',
+    		)
+    	);
+    	$wp_customize->add_setting(
+    		'kadima_options[slide_desc_'.$i.']',
+    		array(
+    			'type'    => 'option',
+    			'default' => $wl_theme_options['slide_desc_'.$i],
+    			'capability' => 'edit_theme_options',
+    			'sanitize_callback' => 'kadima_sanitize_text',
+    		)
+    	);
+    	$wp_customize->add_setting(
+    		'kadima_options[slide_btn_text_'.$i.']',
+    		array(
+    			'type'    => 'option',
+    			'default' => $wl_theme_options['slide_btn_text_'.$i],
+    			'capability' => 'edit_theme_options',
+    			'sanitize_callback' => 'kadima_sanitize_text',
+    		)
+    	);
+    	$wp_customize->add_setting(
+    		'kadima_options[slide_btn_link_'.$i.']',
+    		array(
+    			'type'    => 'option',
+    			'default' => $wl_theme_options['slide_btn_link_'.$i],
+    			'capability' => 'edit_theme_options',
+    			'sanitize_callback' => 'esc_url_raw',
+    		)
+    	);
+        $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'kadima_slider_image_'.$i, array(
+    		'label'      => __( 'Slider Image '.$count12[$i-1], 'kadima' ),
+    		'section'    => 'slider_section',
+    		'settings'   => 'kadima_options[slide_image_'.$i.']'
+    	) ) );
+    	$wp_customize->add_control( 'slide_title_'.$i, array(
+    		'label'      => __( 'Slider Title '.$count12[$i-1], 'kadima' ),
+    		'type'       => 'text',
+    		'section'    => 'slider_section',
+    		'settings'   => 'kadima_options[slide_title_'.$i.']'
+    	) );
+        $wp_customize->add_control( 'slide_desc_'.$i, array(
+    		'label'      => __( 'Slider Description '.$count12[$i-1], 'kadima' ),
+    		'type'       => 'text',
+    		'section'    => 'slider_section',
+    		'settings'   => 'kadima_options[slide_desc_'.$i.']'
+    	) );
+        $wp_customize->add_control( 'slide_btn_'.$i, array(
+    		'label'      => __( 'Slider Button Text '.$count12[$i-1], 'kadima' ),
+    		'type'       => 'text',
+    		'section'    => 'slider_section',
+    		'settings'   => 'kadima_options[slide_btn_text_'.$i.']'
+    	) );
+        $wp_customize->add_control( 'slide_btnlink_'.$i, array(
+    		'label'      => __( 'Slider Button Link '.$count12[$i-1], 'kadima' ),
+    		'type'       => 'url',
+    		'section'    => 'slider_section',
+    		'settings'   => 'kadima_options[slide_btn_link_'.$i.']'
+    	) );
+    }
 	/* Service Options */
 	$wp_customize->add_section('service_section',array(
     	'title'=>__("Service Options",'kadima'),
@@ -373,68 +213,6 @@ function kadima_customizer( $wp_customize ) {
 			'capability' => 'edit_theme_options'
 		)
 	);
-	$wp_customize->add_setting(
-	   'kadima_options[home_service_heading]',
-		array(
-    		'default'=>esc_attr($wl_theme_options['home_service_heading']),
-    		'type'=>'option',
-    		'capability'=>'edit_theme_options',
-    		'sanitize_callback'=>'kadima_sanitize_text',
-		)
-	);
-	$wp_customize->add_control( 'home_service_heading', array(
-		'label'        => __( 'Home Service Title', 'kadima' ),
-		'type'=>'text',
-		'section'    => 'service_section',
-		'settings'   => 'kadima_options[home_service_heading]'
-	) );
-    for($i=1;$i<=6;$i++){
-    	$wp_customize->add_setting(
-    	   'kadima_options[service_'.$i.'_icons]',
-    		array(
-        		'default'=>esc_attr($wl_theme_options['service_'.$i.'_icons']),
-        		'type'=>'option',
-        		'capability'=>'edit_theme_options',
-        		'sanitize_callback'=>'kadima_sanitize_text',
-    		)
-    	);
-        $wp_customize->add_setting(
-    	   'kadima_options[service_'.$i.'_img]',
-    		array(
-        		'default'=>esc_attr($wl_theme_options['service_'.$i.'_img']),
-        		'type'=>'option',
-        		'capability'=>'edit_theme_options',
-        		'sanitize_callback'=>'kadima_sanitize_text',
-    		)
-    	);
-        $wp_customize->add_setting(
-    	   'kadima_options[service_'.$i.'_title]',
-    		array(
-        		'default'=>esc_attr($wl_theme_options['service_'.$i.'_title']),
-        		'type'=>'option',
-        		'capability'=>'edit_theme_options',
-        		'sanitize_callback'=>'kadima_sanitize_text',
-    		)
-    	);
-        $wp_customize->add_setting(
-    	   'kadima_options[service_'.$i.'_text]',
-    		array(
-        		'default'=>esc_attr($wl_theme_options['service_'.$i.'_text']),
-        		'type'=>'option',
-        		'sanitize_callback'=>'kadima_sanitize_text',
-        		'capability'=>'edit_theme_options',
-    		)
-    	);
-        $wp_customize->add_setting(
-    	   'kadima_options[service_'.$i.'_link]',
-    		array(
-        		'default'=>esc_attr($wl_theme_options['service_'.$i.'_link']),
-        		'type'=>'option',
-        		'capability'=>'edit_theme_options',
-        		'sanitize_callback'=>'esc_url_raw',
-    		)
-        );
-    }
     $wp_customize->add_control(
         'kadima_show_service',
         array(
@@ -444,8 +222,67 @@ function kadima_customizer( $wp_customize ) {
     		'settings'   => 'kadima_options[service_home]'
     	)
     );
-    for($i=1;$i<=6;$i++){
-        $j = array(' One', ' Two', ' Three', ' Four', 'Five', 'Six');
+	$wp_customize->add_setting(
+	   'kadima_options[service_heading]',
+		array(
+    		'default'=>esc_attr($wl_theme_options['service_heading']),
+    		'type'=>'option',
+    		'capability'=>'edit_theme_options',
+    		'sanitize_callback'=>'kadima_sanitize_text',
+		)
+	);
+	$wp_customize->add_control( 'service_heading', array(
+		'label'        => __( 'Home Service Title', 'kadima' ),
+		'type'=>'text',
+		'section'    => 'service_section',
+		'settings'   => 'kadima_options[service_heading]'
+	) );
+    for($i=1;$i<=12;$i++){
+    	$wp_customize->add_setting(
+    	   'kadima_options[service_icons_'.$i.']',
+    		array(
+        		'default'=>esc_attr($wl_theme_options['service_icons_'.$i]),
+        		'type'=>'option',
+        		'capability'=>'edit_theme_options',
+        		'sanitize_callback'=>'kadima_sanitize_text',
+    		)
+    	);
+        $wp_customize->add_setting(
+    	   'kadima_options[service_img_'.$i.']',
+    		array(
+        		'default'=>esc_attr($wl_theme_options['service_img_'.$i]),
+        		'type'=>'option',
+        		'capability'=>'edit_theme_options',
+        		'sanitize_callback'=>'kadima_sanitize_text',
+    		)
+    	);
+        $wp_customize->add_setting(
+    	   'kadima_options[service_title_'.$i.']',
+    		array(
+        		'default'=>esc_attr($wl_theme_options['service_title_'.$i]),
+        		'type'=>'option',
+        		'capability'=>'edit_theme_options',
+        		'sanitize_callback'=>'kadima_sanitize_text',
+    		)
+    	);
+        $wp_customize->add_setting(
+    	   'kadima_options[service_text_'.$i.']',
+    		array(
+        		'default'=>esc_attr($wl_theme_options['service_text_'.$i]),
+        		'type'=>'option',
+        		'sanitize_callback'=>'kadima_sanitize_text',
+        		'capability'=>'edit_theme_options',
+    		)
+    	);
+        $wp_customize->add_setting(
+    	   'kadima_options[service_link_'.$i.']',
+    		array(
+        		'default'=>esc_attr($wl_theme_options['service_link_'.$i]),
+        		'type'=>'option',
+        		'capability'=>'edit_theme_options',
+        		'sanitize_callback'=>'esc_url_raw',
+    		)
+        );
         $wp_customize->add_control(
             new kadima_Customize_Misc_Control(
                 $wp_customize,
@@ -456,37 +293,37 @@ function kadima_customizer( $wp_customize ) {
                 )
             )
         );
-        $wp_customize->add_control( 'service_'.$j[$i-1].'_title', array(
-    		'label'        => __( 'Service '.$j[$i-1].' Title', 'kadima' ),
+        $wp_customize->add_control( 'service_title_'.$i, array(
+    		'label'        => __( 'Service '.$count12[$i-1].' Title', 'kadima' ),
     		'type'=>'text',
     		'section'    => 'service_section',
-    		'settings'   => 'kadima_options[service_'.$i.'_title]'
+    		'settings'   => 'kadima_options[service_title_'.$i.']'
     	) );
-    	$wp_customize->add_control('kadima_options[service_'.$i.'_icons]',
+    	$wp_customize->add_control( 'kadima_options[service_icons_'.$i.']',
             array(
-        		'label'        => __( 'Service Icon '.$j[$i-1].'', 'kadima' ),
+        		'label'        => __( 'Service Icon '.$count12[$i-1], 'kadima' ),
         		'description'=>__('<a href="http://fontawesome.bootstrapcheatsheets.com">FontAwesome Icons</a>','kadima'),
                 'section'  => 'service_section',
         		'type'=>'text',
-        		'settings'   => 'kadima_options[service_'.$i.'_icons]'
+        		'settings'   => 'kadima_options[service_icons_'.$i.']'
             )
         );
         $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'kadima_service_img_'.$i, array(
-            'label'        => __( 'Service '.$j[$i-1].' Image', 'kadima' ),
+            'label'        => __( 'Service '.$count12[$i-1].' Image', 'kadima' ),
             'section'    => 'service_section',
-            'settings'   => 'kadima_options[service_'.$i.'_img]'
+            'settings'   => 'kadima_options[service_img_'.$i.']'
         ) ) );
-    	$wp_customize->add_control( 'service_'.$j[$i-1].'_text', array(
-    		'label'        => __( 'Service '.$j[$i-1].' Text', 'kadima' ),
+    	$wp_customize->add_control( 'service_text_'.$i, array(
+    		'label'        => __( 'Service '.$count12[$i-1].' Text', 'kadima' ),
     		'type'=>'text',
     		'section'    => 'service_section',
-    		'settings'   => 'kadima_options[service_'.$i.'_text]'
+    		'settings'   => 'kadima_options[service_text_'.$i.']'
     	) );
-    	$wp_customize->add_control( 'service_'.$i.'_link', array(
-    		'label'        => __( 'Service '.$j[$i-1].' Link', 'kadima' ),
+    	$wp_customize->add_control( 'service_link_'.$i, array(
+    		'label'        => __( 'Service '.$count12[$i-1].' Link', 'kadima' ),
     		'type'=>'url',
     		'section'    => 'service_section',
-    		'settings'   => 'kadima_options[service_'.$i.'_link]'
+    		'settings'   => 'kadima_options[service_link_'.$i.']'
     	) );
     }
     /* Portfolio Section */
@@ -518,65 +355,92 @@ function kadima_customizer( $wp_customize ) {
 			'sanitize_callback'=>'kadima_sanitize_text',
 		)
 	);
-	for($i=1;$i<=12;$i++){
+	$wp_customize->add_setting(
+		'kadima_options[port_description]',
+		array(
+			'type'    => 'option',
+			'default'=>$wl_theme_options['port_description'],
+			'capability' => 'edit_theme_options',
+			'sanitize_callback'=>'kadima_sanitize_text',
+		)
+	);
+    $wp_customize->add_control( 'show_portfolio', array(
+        'label'        => __( 'Enable Portfolio on Home', 'kadima' ),
+        'type'=>'checkbox',
+        'section'    => 'portfolio_section',
+        'settings'   => 'kadima_options[portfolio_home]'
+    ) );
+    $wp_customize->add_control( 'portfolio_title', array(
+        'label'        => __( 'Portfolio Heading', 'kadima' ),
+        'type'=>'text',
+        'section'    => 'portfolio_section',
+        'settings'   => 'kadima_options[port_heading]'
+    ) );
+    $wp_customize->add_control( 'portfolio_description', array(
+        'label'        => __( 'Portfolio Description', 'kadima' ),
+        'type'=>'textarea',
+        'section'    => 'portfolio_section',
+        'settings'   => 'kadima_options[port_description]'
+    ) );
+    for($i=1;$i<=12;$i++){
 		$wp_customize->add_setting(
-			'kadima_options[port_'.$i.'_img]',
+			'kadima_options[port_img_'.$i.']',
 			array(
 				'type'    => 'option',
-				'default'=>$port[$i],
+				'default' => $wl_theme_options['port_img_'.$i],
 				'capability' => 'edit_theme_options',
 				'sanitize_callback'=>'esc_url_raw',
 			)
 		);
 		$wp_customize->add_setting(
-			'kadima_options[port_'.$i.'_title]',
+			'kadima_options[port_title_'.$i.']',
 			array(
 				'type'    => 'option',
-				'default'=>$wl_theme_options['port_'.$i.'_title'],
+				'default'=>$wl_theme_options['port_title_'.$i],
 				'capability' => 'edit_theme_options',
 				'sanitize_callback'=>'kadima_sanitize_text',
 			)
 		);
 		$wp_customize->add_setting(
-			'kadima_options[port_'.$i.'_link]',
+			'kadima_options[port_description_'.$i.']',
 			array(
 				'type'    => 'option',
-				'default'=>$wl_theme_options['port_'.$i.'_link'],
+				'default'=>$wl_theme_options['port_description_'.$i],
+				'capability' => 'edit_theme_options',
+				'sanitize_callback'=>'kadima_sanitize_text',
+			)
+		);
+		$wp_customize->add_setting(
+			'kadima_options[port_link_'.$i.']',
+			array(
+				'type'    => 'option',
+				'default'=>$wl_theme_options['port_link_'.$i],
 				'capability' => 'edit_theme_options',
 				'sanitize_callback'=>'esc_url_raw',
 			)
 		);
-	}
-	$wp_customize->add_control( 'kadima_show_portfolio', array(
-		'label'        => __( 'Enable Portfolio on Home', 'kadima' ),
-		'type'=>'checkbox',
-		'section'    => 'portfolio_section',
-		'settings'   => 'kadima_options[portfolio_home]'
-	) );
-	$wp_customize->add_control( 'kadima_portfolio_title', array(
-		'label'        => __( 'Portfolio Heading', 'kadima' ),
-		'type'=>'text',
-		'section'    => 'portfolio_section',
-		'settings'   => 'kadima_options[port_heading]'
-	) );
-	for($i=1;$i<=12;$i++){
-    	$j = array(' One', ' Two', ' Three', ' Four', ' Five', ' Six', ' Seven', ' Eight', ' Nine', ' TEN', ' ELEVEN', ' TWELVE');
 		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'kadima_portfolio_img_'.$i, array(
-    		'label'        => __( 'Portfolio Image', 'kadima' ).$j[$i-1],
+    		'label'      => __( 'Portfolio Image'.$count12[$i-1], 'kadima' ),
     		'section'    => 'portfolio_section',
-    		'settings'   => 'kadima_options[port_'.$i.'_img]'
+    		'settings'   => 'kadima_options[port_img_'.$i.']'
     	) ) );
     	$wp_customize->add_control( 'kadima_portfolio_title_'.$i, array(
-    		'label'        => __( 'Portfolio Title', 'kadima').$j[$i-1],
-    		'type'=>'text',
+    		'label'      => __( 'Portfolio Title '.$count12[$i-1], 'kadima'),
+    		'type'       => 'text',
     		'section'    => 'portfolio_section',
-    		'settings'   => 'kadima_options[port_'.$i.'_title]'
+    		'settings'   => 'kadima_options[port_title_'.$i.']'
+    	) );
+		$wp_customize->add_control( 'kadima_portfolio_description_'.$i, array(
+    		'label'      => __( 'Portfolio Description '.$count12[$i-1], 'kadima'),
+    		'type'       =>'textarea',
+    		'section'    => 'portfolio_section',
+    		'settings'   => 'kadima_options[port_description_'.$i.']'
     	) );
     	$wp_customize->add_control( 'kadima_portfolio_link_'.$i, array(
-    		'label'        => __( 'Portfolio Link', 'kadima' ).$j[$i-1],
-    		'type'=>'url',
+    		'label'      => __( 'Portfolio Link '.$count12[$i-1], 'kadima' ),
+    		'type'       => 'url',
     		'section'    => 'portfolio_section',
-    		'settings'   => 'kadima_options[port_'.$i.'_link]'
+    		'settings'   => 'kadima_options[port_link_'.$i.']'
     	) );
 	}
 	/* Blog Option */
@@ -612,10 +476,10 @@ function kadima_customizer( $wp_customize ) {
 			'capability'        => 'edit_theme_options',
 		)
 	);
-	$wp_customize->add_control( 'kadima_latest_post',
+	$wp_customize->add_control( 'blog_title',
         array(
-    		'label'        => __( 'News Title', 'kadima' ),
-    		'type'=>'text',
+    		'label'      => __( 'News Title', 'kadima' ),
+    		'type'       =>'text',
     		'section'    => 'blog_section',
     		'settings'   => 'kadima_options[blog_title]',
     	)
@@ -854,13 +718,13 @@ function kadima_customizer( $wp_customize ) {
 		'settings'   => 'kadima_options[linkedin_link]'
 	) );
 	$wp_customize->add_setting(
-	'kadima_options[gplus]',
-		array(
-		'default'=>esc_attr($wl_theme_options['gplus']),
-		'type'=>'option',
-		'sanitize_callback'=>'esc_url_raw',
-		'capability'=>'edit_theme_options'
-		)
+        'kadima_options[gplus]',
+    		array(
+    		'default'=>esc_attr($wl_theme_options['gplus']),
+    		'type'=>'option',
+    		'sanitize_callback'=>'esc_url_raw',
+    		'capability'=>'edit_theme_options'
+    		)
 	);
 	$wp_customize->add_control( 'gplus', array(
 		'label'        => __( 'Goole+', 'kadima' ),
@@ -986,7 +850,7 @@ function kadima_customizer( $wp_customize ) {
     	'panel'=>'kadima_theme_option',
     	'capability'=>'edit_theme_options',
         'priority' => 35
-	));
+	) );
 	$wp_customize->add_setting(
 	   'kadima_options[footer_customizations]',
 		array(

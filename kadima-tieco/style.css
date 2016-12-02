@@ -10,7 +10,7 @@ Version:        0.1.0
 
 body {
     color: #000 !important;
-    font-family: 'Arimo', Arial, Helvetica, sans-serif !important;
+    font-family: "alwyn-new-web", Arial, Helvetica, sans-serif !important;
 }
 .logo {
     float: left;
@@ -60,6 +60,7 @@ body {
 
 .navigation_menu {
     border-top: 0px solid #0e88e3 !important;
+	border-bottom: .313rem solid #dee8ed;
 }
 .navbar-default .navbar-nav> .active> a, .navbar-default .navbar-nav> .active> a:hover, .navbar-default .navbar-nav> .active> a:focus, .dropdown-menu .active a {
     background-color: #0e88e3 !important;
@@ -186,11 +187,13 @@ body {
 }
 .kadima_sidebar_widget_title {}
 .kadima_sidebar_widget_title h2 {
-    font-family: 'Arimo', Arial, Helvetica, sans-serif !important;
     font-size: 18px !important;
 }
 .woocommerce div.product .product_title {
-    font-family: 'Arimo', Arial, Helvetica, sans-serif !important;
+	font-size: 4rem;
+    font-weight: 400;
+    color: #0e88e3;
+    padding: 10px;
 }
 .woocommerce div.product p.price, .woocommerce div.product span.price {
     /*color: #ff002a !important;*/
@@ -261,5 +264,5 @@ body {
 }
 .service-bottom {
 	margin-top:-40px;
-	
+
 }
