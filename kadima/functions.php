@@ -6,24 +6,17 @@
 	define('WL_TEMPLATE_DIR_URI', get_template_directory_uri());
 	define('WL_TEMPLATE_DIR', get_template_directory());
 	define('WL_TEMPLATE_DIR_CORE' , WL_TEMPLATE_DIR . '/core');
-	require( WL_TEMPLATE_DIR_CORE . '/menu/default_menu_walker.php' );
-	require( WL_TEMPLATE_DIR_CORE . '/menu/kadima_nav_walker.php' );
+	require( WL_TEMPLATE_DIR_CORE . '/menu/menu_nav_walker.php' );
 	require( WL_TEMPLATE_DIR_CORE . '/scripts/css_js.php' );
 	require( WL_TEMPLATE_DIR_CORE . '/comment-function.php' );
 	require(dirname(__FILE__).'/customizer.php');
-	//Sane Defaults
-	
-	/**
-	 * 获取访问用户的语言
-	 */
-	function get_client_language(){
+
+	function get_client_language(){ // 获取访问用户的语言
 		if(isset($_SERVER["HTTP_ACCEPT_LANGUAGE"])){
-
 			preg_match("/([^,;]*)/", $_SERVER["HTTP_ACCEPT_LANGUAGE"], $array_languages);
-
 			return str_replace( "_", "-", strtolower( $array_languages[0] ) );
 		}
-		return 'xx'; 
+		return 'xx';
 	}
 	function kadima_default_settings() {
 	    $count12 = array('One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'TEN', 'ELEVEN', 'TWELVE');
@@ -57,8 +50,7 @@
 			'info_tel' => __('', 'kadima' ),
 			'info_fax' => __('', 'kadima' ),
 			'info_mail'=> __('', 'kadima' ),
-			'info_support'=> __('', 'kadima' ),
-            		 //
+			'info_support'=> __('<a href="http://www.yunclever.com" target="_blank">YunClever</a>', 'kadima' ),
 			'service_home'=>'1',
 			'home_service_heading' => __('', 'kadima' ),
 			'portfolio_home'=>'0',
@@ -100,7 +92,6 @@
             kadima_default_settings()
         );
 	}
-	/*After Theme Setup*/
 	add_action( 'after_setup_theme', 'kadima_head_setup' );
 	function kadima_head_setup() {
 		global $content_width;
@@ -139,10 +130,7 @@
        return '';
 	}
 	add_filter('excerpt_more', 'kadima_excerpt_more');
-	/*
-	* widget area
-	*/
-	add_action( 'widgets_init', 'kadima_widgets_init');
+	add_action( 'widgets_init', 'kadima_widgets_init'); // widget area
 	function kadima_widgets_init() {
     	/*sidebar*/
     	register_sidebar( array(
@@ -164,8 +152,7 @@
     		'after_title' => '</h3>',
     	) );
 	}
-	/* Breadcrumbs  */
-	function kadima_breadcrumbs() {
+	function kadima_breadcrumbs() { // 面包屑导航
         $delimiter = '';
         $home = __('Home', 'kadima' ); // text for the 'Home' link
         $before = '<li>'; // tag before the current crumb
@@ -243,8 +230,7 @@
         }
         echo '</ul>';
 	}
-	//PAGINATION
-	function kadima_pagination($pages = '', $range = 2) {
+	function kadima_pagination($pages = '', $range = 2) { //分页
         $showitems = ($range * 2)+1;
         global $paged;
         if(empty($paged)) $paged = 1;
@@ -274,10 +260,7 @@
             echo "</div></div>";
         }
     }
-	/*===================================================================================
-	* Add Author Links
-	* =================================================================================*/
-	function kadima_author_profile( $contactmethods ) {
+	function kadima_author_profile( $contactmethods ) { // Add Author Links
     	$contactmethods['youtube_profile'] = __('Youtube Profile URL','kadima');
     	$contactmethods['twitter_profile'] = __('Twitter Profile URL','kadima');
     	$contactmethods['facebook_profile'] = __('Facebook Profile URL','kadima');
@@ -285,10 +268,7 @@
     	return $contactmethods;
 	}
 	add_filter( 'user_contactmethods', 'kadima_author_profile', 10, 1);
-	/*===================================================================================
-	* Add Class Gravtar
-	* =================================================================================*/
-	add_filter('get_avatar','kadima_gravatar_class');
+	add_filter('get_avatar','kadima_gravatar_class'); // Add Class Gravtar
 	function kadima_gravatar_class($class) {
         $class = str_replace("class='avatar", "class='author_detail_img", $class);
         return $class;
@@ -375,16 +355,22 @@
 		) );
 		$wp_admin_bar->add_menu( array(
 			'id'     => 'page-edit',
-			'title'  => __( '网站编辑', 'kadima' ),
-			'href'   => admin_url( '/customize.php?return=%2Fwp-admin%2Ftheme-editor.php' ),
+			'title'  => __( '可视化编辑', 'kadima' ),
+			'href'   => admin_url( '/customize.php?return=%2Fwp-admin%2Findex.php' ),
 		) );
 		$wp_admin_bar->add_menu( array(
 			'id'     => 'page-overview',
-			'parent' => 'top-secondary',
-			'title'  => __( '预览', 'kadima' ),
+			'title'  => __( '预览前台', 'kadima' ),
 			'href'   => home_url(),
+			'meta'   => array( 'target' => '_blank' ),
 		) );
-
+		$wp_admin_bar->add_menu( array(
+			'id'     => 'menu-helpdocs',
+			'parent' => 'top-secondary',
+			'title'  => __( '帮助与文档', 'kadima' ),
+			'href'   => 'http://dc.yunclever.com/docs/?g=Doc&m=Index&a=index&tree=1',
+			'meta'   => array( 'target' => '_blank' ),
+		) );
     }
 	function customWp_admin_bar_add_logo() {
         global $wp_admin_bar;
@@ -395,7 +381,7 @@
 	}
     function customWp_footer_admin_change () {return '';}
 	function customWp_right_admin_footer_text($text) {
-		$text = 'Power by 云聪智能全网营销平台 - Version : 1.0.5 Build 161128';
+		$text = 'Power by 云聪智能全网营销平台 - Version : 1.0.5 Build 161206';
 		return $text;
 	}
     function customWp_screen_options_remove(){ return false;}
@@ -431,11 +417,12 @@
 	}
 	function customWp_rename_dashboard_widgets() {
 		global $wp_meta_boxes;
-		$wp_meta_boxes['dashboard']['normal']['core']['woocommerce_dashboard_status']['title'] = '电商数据统计';
-		$wp_meta_boxes['dashboard']['normal']['core']['woocommerce_dashboard_recent_reviews']['title'] = '最新产品评论';
-	}
-	function customWp_all_settings_link() {// 显示所有设置菜单
-		add_options_page(__('All Settings'), __('All Settings'), 'administrator', 'options.php');
+		if(array_key_exists('woocommerce_dashboard_status', $wp_meta_boxes['dashboard']['normal']['core'])){
+			$wp_meta_boxes['dashboard']['normal']['core']['woocommerce_dashboard_status']['title'] = '电商数据统计';
+		}
+		if(array_key_exists('woocommerce_dashboard_recent_reviews', $wp_meta_boxes['dashboard']['normal']['core'])){
+			$wp_meta_boxes['dashboard']['normal']['core']['woocommerce_dashboard_recent_reviews']['title'] = '最新产品评论';
+		}
 	}
 	function customWp_login() {
 		$str = file_get_contents('http://cn.bing.com/HPImageArchive.aspx?idx=0&n=1');
@@ -460,9 +447,6 @@
 		//if( strpos( $src, 'ver='. get_bloginfo( 'version' ) ) )
 		//$src = remove_query_arg( 'ver', $src );
 		return remove_query_arg( 'ver', $src );
-	}
-	function customWp_woocommerce_remove_related_products( $args ) {
-		return array();
 	}
 	function customWp_modify_post_mime_types( $post_mime_types ) { //媒体库过滤不同类型的文件
 		$post_mime_types['image'] = array( __( '图片' ), __( '图片' ), _n_noop( '图片 <span class="count">(%s)</span>', '图片 <span class="count">(%s)</span>' ) );
@@ -548,13 +532,6 @@
 			}
 		}
 	}
-	function customWp_modify_jquery() {
-		if (!is_admin()) {
-			wp_deregister_script('jquery');
-			wp_register_script('jquery', 'http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js', false, '1.12.1');
-			wp_enqueue_script('jquery');
-		}
-	}
 	function customWp_canonical( $paged = true ) {
 	        $link = false;
 	        if ( is_front_page() ) {
@@ -605,9 +582,9 @@
 	remove_action('load-update-core.php', 'wp_update_plugins');
 	remove_action('load-update-core.php', 'wp_update_themes');
 	remove_action('welcome_panel', 'wp_welcome_panel');
-    remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0 );//移除相邻文章的url
+	remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0 );//移除相邻文章的url
 	remove_action('wp_head', 'feed_links_extra', 3); 			//去除评论feed
-    remove_action('wp_head', 'feed_links', 2);					//去除文章feed
+	remove_action('wp_head', 'feed_links', 2);					//去除文章feed
 	remove_action('wp_head', 'index_rel_link');					//移除当前页面的索引
 	remove_action('wp_head', 'parent_post_rel_link', 10, 0 );	//移除后面文章的url
 	remove_action('wp_head', 'rsd_link');						//针对Blog的远程离线编辑器接口
@@ -623,24 +600,22 @@
 	//add_action('wp_enqueue_scripts', 'customWp_replace_open_sans' );
 	//add_action('admin_enqueue_scripts', 'customWp_replace_open_sans');
 	add_action('admin_head', 'customWp_admin_css');
-    //add_action('admin_notices', 'customWp_plugin_check_missing');
+	//add_action('admin_notices', 'customWp_plugin_check_missing');
 	add_action('admin_bar_menu', 'customWp_admin_bar_add_logo', 1); //最后一个参数是菜单的位置
 	add_action('admin_menu','customWp_remove_metaboxes');
-	//add_action('admin_menu', 'customWp_all_settings_link');
-	add_action('init', 'customWp_modify_jquery');
 	add_action('init', 'customWp_disable_emojis');
 	add_action('init', 'customWp_replace_open_sans');
 	add_action('init', 'customWp_theme_add_editor_styles');
-    add_action('login_head', 'customWp_login');
+	add_action('login_head', 'customWp_login');
 	add_action('manage_product_posts_custom_column', 'customWp_product_column', 10, 2 );
 	add_action('wp_dashboard_setup', 'customWp_rename_dashboard_widgets', 999);
 	add_action('wp_head', 'customWp_canonical');
 	add_action('wp_before_admin_bar_render', 'customWp_admin_bar', 0);
 	//add_action('wp_dashboard_setup', 'customWp_add_dashboard_widgets' );
-    add_filter('admin_footer_text', 'customWp_footer_admin_change', 9999);
+	add_filter('admin_footer_text', 'customWp_footer_admin_change', 9999);
 	add_filter('admin_title', 'customWp_admin_title', 10, 2);
 	add_filter('automatic_updater_disabled', '__return_true');	// 彻底关闭自动更新
-    add_filter('contextual_help', 'customWp_screen_help_remove', 999, 3 );
+	add_filter('contextual_help', 'customWp_screen_help_remove', 999, 3 );
 	add_filter('gettext', 'customWp_remove_admin_stuff', 20, 3);
 	add_filter('login_headertitle', 'customWp_login_title');
 	add_filter('media_row_actions', 'customWp_media_row_actions', 10, 2 );
@@ -650,13 +625,12 @@
 	add_filter('pre_site_transient_update_plugins', '__return_null');
 	add_filter('pre_site_transient_update_themes', '__return_null');
 	add_filter('style_loader_src', 'customWp_remove_cssjs_ver', 999 );
-    add_filter('screen_options_show_screen', 'customWp_screen_options_remove');
+	add_filter('screen_options_show_screen', 'customWp_screen_options_remove');
 	add_filter('script_loader_src', 'customWp_remove_cssjs_ver', 999 );
 	add_filter('update_footer', 'customWp_right_admin_footer_text', 11);
 	add_filter('wp_mail_from', 'customWp_email_from_email');
 	add_filter('wp_mail_from_name', 'customWp_email_from_name');
 	add_filter('wp_image_editors', 'customWp_change_graphic_lib' );
-	//add_filter('woocommerce_related_products_args','customWp_woocommerce_remove_related_products', 10);
 	add_filter('xmlrpc_enabled', '__return_false');
 	function smilies_reset() {
 		global $wpsmiliestrans, $wp_smiliessearch;
