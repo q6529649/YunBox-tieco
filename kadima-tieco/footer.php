@@ -45,5 +45,18 @@
 <?php { echo esc_attr($wl_theme_options['custom_css']); } ?>
 </style>
 <?php wp_footer(); ?>
+<?php
+	$language = get_client_language();
+	if ($language != 'zh-cn') {
+?>
+	<script type='text/javascript' src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
+	<script type="text/javascript">
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+		}
+	</script>
+<?php
+	}
+?>
 </body>
 </html>

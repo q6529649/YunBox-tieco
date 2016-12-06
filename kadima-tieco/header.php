@@ -39,9 +39,9 @@
 						} ?>
 					</a>
 				</div>
+				<div id="google_translate_element" style="float: right;margin-top: 32px;"></div>
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-
 					  <span class="sr-only"><?php _e('Toggle navigation','kadima');?></span>
 					  <span class="icon-bar"></span>
 					  <span class="icon-bar"></span>
@@ -49,13 +49,15 @@
 					</button>
 				</div>
 				<div id="menu" class="collapse navbar-collapse ">
-				<?php wp_nav_menu( array(
-						'theme_location' => 'primary',
-						'menu_class' => 'nav navbar-nav',
-						'fallback_cb' => 'kadima_fallback_page_menu',
-						'walker' => new kadima_nav_walker(),
-						)
-						);	?>
+					<?php
+						wp_nav_menu( array(
+							'theme_location' => 'primary',
+							'menu_class' => 'nav navbar-nav',
+							'fallback_cb' => 'kadima_fallback_page_menu',
+							'walker' => new kadima_nav_walker(),
+							)
+						);
+					?>
 				</div>
 			</nav>
 		</div>
