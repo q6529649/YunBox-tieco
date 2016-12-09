@@ -7,6 +7,8 @@ function kadima_enqueue_styles() {
     /* Always load active theme's style.css. */
     wp_enqueue_style( 'style', get_stylesheet_uri() );
     //wp_dequeue_style( 'parent-style' );
+	wp_enqueue_style( 'layim-style', 'http://cdn.yunclever.com/static/layui/css/layui.css' );
+	wp_enqueue_script('layim', 'http://cdn.yunclever.com/static/layui/layui.js', array('jquery'));
 }
 add_action( 'wp_enqueue_scripts', 'kadima_enqueue_styles' );
 add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 12;' ), 20 );

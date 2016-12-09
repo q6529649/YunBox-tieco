@@ -66,5 +66,33 @@
 <?php
 	}
 ?>
+<script>
+layui.use('layim', function(layim){
+  var layim = layui.layim;
+  layim.config({
+    mine: {
+      "username": "Anonymious"
+      ,"id": "100000123"
+      ,"status": "online"
+      ,"remark": "Nothing"
+      ,"avatar": "http://cdn.yunclever.com/static/layui/images/Chat.png"
+    }
+	,minRight: "0px"
+    ,brief: true
+  });  
+  layim.chat({
+    name: 'Online Chat'
+    ,type: 'kefu'
+    ,avatar: 'http://cdn.yunclever.com/static/layui/images/Chat.png'
+    ,id: 1111111
+  });
+  layim.setChatMin();
+});
+layui.use(['code'], function(){
+  layui.code({
+    elem: 'pre'
+  })
+});
+</script>
 </body>
 </html>
