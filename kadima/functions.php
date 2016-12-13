@@ -624,7 +624,7 @@
 		add_action('admin_enqueue_scripts', 'customWp_admin_css');
 		add_action('admin_bar_menu', 'customWp_admin_bar_add_logo', 1); //最后一个参数是菜单的位置
 		add_action('admin_menu','customWp_remove_menuandmetaboxes');
-		//add_action('admin_head', 'customWp_redirect_dashboard');
+		add_action('admin_head', 'customWp_redirect_dashboard');
 		add_filter('admin_footer_text', 'customWp_footer_admin_change', 9999);
 		//add_filter('admin_init', 'customWp_admin_init');
 		add_filter('admin_title', 'customWp_admin_title', 10, 2);
