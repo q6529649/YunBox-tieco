@@ -2,13 +2,38 @@
 /** Theme Name	: Kadima
 * Theme Core Functions and Codes
 */
-	/**Includes required resources here**/
 	define('WL_TEMPLATE_DIR_URI', get_template_directory_uri());
 	define('WL_TEMPLATE_DIR', get_template_directory());
 	define('WL_TEMPLATE_DIR_CORE' , WL_TEMPLATE_DIR . '/core');
 	require( WL_TEMPLATE_DIR_CORE . '/menu/menu_nav_walker.php' );
-	require( WL_TEMPLATE_DIR_CORE . '/scripts/css_js.php' );
-	require( WL_TEMPLATE_DIR_CORE . '/comment-function.php' );
+	function kadima_scripts() {
+        wp_enqueue_style('bootstrap', '//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css');
+        wp_enqueue_style('default', get_template_directory_uri() . '/css/default.css');
+        wp_enqueue_style('animations', '//cdn.bootcss.com/animations/2.1/css/animations.min.css');
+        //wp_enqueue_style('theme-animtae', get_template_directory_uri() . '/css/theme-animtae.css');
+        wp_enqueue_style('font-awesome', '//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css');
+        wp_enqueue_style('video-js-css', '//cdn.bootcss.com/video.js/5.14.1/video-js.min.css');
+        wp_enqueue_style('font-family', get_template_directory_uri() . '/css/font-family.css');
+        wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
+        // Js
+        wp_enqueue_script('bootstrap-js', '//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'));
+        wp_enqueue_script('video-js', '//cdn.bootcss.com/video.js/5.14.1/video.min.js', array('jquery'));
+        wp_enqueue_script('webim', get_template_directory_uri() .'/web-im/webim.config.js', array('jquery'));
+        wp_enqueue_script('strophe', get_template_directory_uri() .'/web-im/strophe-1.2.8.min.js', array('jquery'));
+        wp_enqueue_script('websdk', get_template_directory_uri() .'/web-im/websdk-1.4.5.js', array('jquery'));
+        wp_enqueue_script('menu', get_template_directory_uri() .'/js/menu.js', array('jquery'));
+        wp_enqueue_script('kadima-theme-script', get_template_directory_uri() .'/js/kadima_theme_script.js', array('jquery'));
+        if(is_front_page()){
+            wp_enqueue_script('jquery.carouFredSel', '//cdn.bootcss.com/jquery.caroufredsel/6.2.1/jquery.carouFredSel.packed.js');
+            wp_enqueue_script('photobox-js', '//cdn.bootcss.com/photobox/1.9.9/photobox/jquery.photobox.min.js');
+            wp_enqueue_style('photobox', '//cdn.bootcss.com/photobox/1.9.9/photobox/photobox.min.css');
+            wp_enqueue_script('kadima-footer-script', get_template_directory_uri() .'/js/kadima-footer-script.js','','',true);
+            wp_enqueue_script('waypoints', '//cdn.bootcss.com/waypoints/4.0.1/jquery.waypoints.min.js','','',true);
+            wp_enqueue_script('scroll', get_template_directory_uri() .'/js/scroll.js','','',true);
+        }
+    }
+	add_action('wp_enqueue_scripts', 'kadima_scripts');
+	//require( WL_TEMPLATE_DIR_CORE . '/comment-function.php' );
 	require(dirname(__FILE__).'/customizer.php');
 
 	function get_client_language(){ // 获取访问用户的语言
@@ -380,7 +405,7 @@
 	}
     function customWp_footer_admin_change () {return '';}
 	function customWp_right_admin_footer_text($text) {
-		$text = 'Power by 云聪智能全网营销平台 - Version : 1.0.5 Build 161206';
+		$text = 'Power by 云聪智能全网营销平台 - Version : 1.0.6 Build 161214';
 		return $text;
 	}
     function customWp_screen_options_remove(){ return false;}
@@ -432,9 +457,6 @@
 			}
 		}
 	}
-	function customWp_admin_init(){
-		remove_submenu_page( 'edit.php', 'page.php' );
-	}
 	function customWp_rename_dashboard_widgets() {
 		global $wp_meta_boxes;
 		if(array_key_exists('woocommerce_dashboard_status', $wp_meta_boxes['dashboard']['normal']['core'])){
@@ -450,7 +472,7 @@
 			$imgurl='http://cn.bing.com'.$matches[1];
 			echo'<style type="text/css">body{background: url('.$imgurl.');width:100%;height:100%;background-image:url('.$imgurl.');-moz-background-size: 100% 100%;-o-background-size: 100% 100%;-webkit-background-size: 100% 100%;background-size: 100% 100%;-moz-border-image: url('.$imgurl.') 0;background-repeat:no-repeat\9;background-image:none\9;}</style>';
         }
-		echo '<link rel="stylesheet" tyssspe="text/css" href="' . get_bloginfo('template_directory') . '/custom_login/custom_login.css" />';
+		echo '<link rel="stylesheet" tyssspe="text/css" href="' . WL_TEMPLATE_DIR_URI. '/custom_login/custom_login.css" />';
     }
 	function customWp_login_title() {
         return 'YunBox - 云聪智能全网营销平台';
@@ -518,8 +540,16 @@
 	function customWp_add_dashboard_widgets() {
 		wp_add_dashboard_widget('yunBox_dashboard_widget', '云聪智能全网营销平台', 'customWp_dashboard_widget_function');
 	}
-	function customWp_admin_css() {
-    		wp_enqueue_style( 'admin-css', get_template_directory_uri() . '/css/admin.css');
+	function customWp_admin_style_scripts() {
+		wp_enqueue_style( 'admin-css', get_template_directory_uri() . '/css/admin.css');
+		if ( $_GET['page'] == 'yc-plugin-dashboard.php' || $_GET['page'] == 'yc-plugin-setting.php' ) {
+			wp_enqueue_style('materialize-css', '//cdn.bootcss.com/materialize/0.97.8/css/materialize.min.css');
+			wp_enqueue_style('materialize-font-family',  plugins_url( '/assets/css/font-family.css' , __FILE__ ));
+			wp_enqueue_style('woocommerce-dashboard',  plugins_url( '/../woocommerce/assets/css/dashboard.css' , __FILE__ ));
+			wp_enqueue_script('jquery3', '//cdn.bootcss.com/jquery/3.1.1/jquery.min.js');
+	        wp_enqueue_script('materialize-js', '//cdn.bootcss.com/materialize/0.97.8/js/materialize.min.js', array('jquery3'));
+	        //wp_enqueue_script('echarts-js', '//cdn.bootcss.com/echarts/3.3.1/echarts.min.js', array('jquery3'));
+		}
 	}
 	function customWp_plugin_check_missing() {
 		$plugins = array(
@@ -619,14 +649,12 @@
 	wp_clear_scheduled_hook('wp_maybe_auto_update');	// 移除已有的自动更新定时作业
 	//add_action('wp_enqueue_scripts', 'customWp_replace_open_sans' );
 	if ( is_admin() ) {
-		//add_action('admin_head', 'customWp_admin_css');
 		//add_action('admin_notices', 'customWp_plugin_check_missing');
-		add_action('admin_enqueue_scripts', 'customWp_admin_css');
+		add_action('admin_enqueue_scripts', 'customWp_admin_style_scripts');
 		add_action('admin_bar_menu', 'customWp_admin_bar_add_logo', 1); //最后一个参数是菜单的位置
 		add_action('admin_menu','customWp_remove_menuandmetaboxes');
 		add_action('admin_head', 'customWp_redirect_dashboard');
 		add_filter('admin_footer_text', 'customWp_footer_admin_change', 9999);
-		//add_filter('admin_init', 'customWp_admin_init');
 		add_filter('admin_title', 'customWp_admin_title', 10, 2);
 	}
 	add_action('init', 'customWp_disable_emojis');
