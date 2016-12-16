@@ -14,7 +14,7 @@
 			<hr style="margin-top: -1em;margin-bottom: 0px; border: 0;width: 60%;border-top: 1px solid #0e88e3;"/>
 		</div>
 		<div class="kadima_blog_post_content">
-			<?php the_content( __( 'Read More' , 'enigma' ) ); ?>
+			<?php the_content( __( 'Read More' , 'kadima' ) ); ?>
 		</div>
 </div>
 <?php comments_template( '', true ); ?>

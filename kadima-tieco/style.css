@@ -12,6 +12,12 @@ body {
     color: #000 !important;
     font-family: "alwyn-new-web", Arial, Helvetica, sans-serif !important;
 }
+.kadima_service_detail>h3>a {
+	color : #0e88e3 !important;
+}
+.kadima_service_detail>h3>a:focus, .kadima_service_detail>h3>a:hover {
+    color: #0e88e3 !important;
+}
 .logo {
     float: left;
     padding-top: 0.5em !important;
@@ -118,6 +124,7 @@ body {
 }
 .kadima_service_area {
     text-align: center;
+	margin-bottom: 0px !important;
 }
 .kadima_service_detail {
     margin-top: 1em;
@@ -188,6 +195,12 @@ body {
 .kadima_sidebar_widget_title {}
 .kadima_sidebar_widget_title h2 {
     font-size: 18px !important;
+}
+.kadima_post_date {
+    background: #0e88e3 !important;
+}
+.kadima_fuul_blog_detail_padding h2 a, .kadima_fuul_blog_detail_padding h2 {
+    color: #0e88e3 !important;
 }
 .woocommerce div.product .product_title {
 	font-size: 4rem;
