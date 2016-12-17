@@ -138,17 +138,20 @@ layui.use('layim', function(layim){
 	});
 });
 </script>
+<script type="text/javascript" src="//x.translateth.is/translate-this.js"></script>
 <?php
 	$language = get_client_language();
 	if ($language != 'zh-cn') {
 ?>
-	<script type='text/javascript' src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
-	<script type="text/javascript">
-		function googleTranslateElementInit() {
-			new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-		}
-	</script>
 	<script>
+		function setCookie(name,value) 
+		{ 
+			var Days = 30; 
+			var exp = new Date(); 
+			exp.setTime(exp.getTime() + Days*24*60*60*1000); 
+			document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString(); 
+		} 
+		setCookie('tt-lang', '<?php echo $language;?>');	
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -159,5 +162,20 @@ layui.use('layim', function(layim){
 <?php
 	}
 ?>
+<script type="text/javascript">
+	TranslateThis({
+		GA : true,
+		noBtn : false,
+		btnImg : 'http://x.translateth.is/tt-btn2.png',
+		btnHeight : 18,
+		btnWidth : 180,    
+		noImg : false,
+		imgHeight : 12,
+		imgWidth : 18,
+		bgImage : 'http://x.translateth.is/tt-sprite3.png',
+		maxLength : 1000,
+		reparse : false
+	});
+</script>
 </body>
 </html>
