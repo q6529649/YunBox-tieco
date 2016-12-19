@@ -21,8 +21,7 @@
 			<link rel="dns-prefetch" href="//cdn.yunclever.com">
 			<link rel="dns-prefetch" href="//cdn.bootcss.com">
 			<link rel="dns-prefetch" href="//use.typekit.net">
-			<link rel="dns-prefetch" href="//static.addtoany.com">
-			<link rel="dns-prefetch" href="//x.translateth.is">';			
+			<link rel="dns-prefetch" href="//static.addtoany.com">';			
 		} elseif (isset($_COOKIE['yc_visit_cookie'])) {
 			echo '';
 		}
@@ -31,8 +30,7 @@
 			<link rel="dns-prefetch" href="//cdn.yunclever.com">
 			<link rel="dns-prefetch" href="//cdn.bootcss.com">
 			<link rel="dns-prefetch" href="//use.typekit.net">
-			<link rel="dns-prefetch" href="//static.addtoany.com">
-			<link rel="dns-prefetch" href="//x.translateth.is">';
+			<link rel="dns-prefetch" href="//static.addtoany.com">';
 		}
 	?>
 	<?php wp_head(); ?>
@@ -91,9 +89,6 @@
 							)
 						);
 					?>
-				</div>
-				<div id="translate-this">
-					<a style="width:100px;height:18px;margin-top: 2.8rem;display:block;" class="translate-this-button" href="https://www.translatecompany.com/translate-this/">Translate Website</a>
 				</div>
 			</nav>
 		</div>

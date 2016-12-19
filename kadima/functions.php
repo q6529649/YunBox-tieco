@@ -438,10 +438,10 @@
 		global $parent_file;
 		if ( 'index.php' == $parent_file ) {
 			if ( headers_sent() ) {
-				echo '<meta http-equiv="refresh" content="0;url=' . admin_url( 'admin.php?page=yc-plugin-dashboard%2Fyc-plugin-dashboard.php' ) . '">';
-				echo '<script type="text/javascript">document.location.href="' . admin_url( 'admin.php?page=yc-plugin-dashboard%2Fyc-plugin-dashboard.php' ) . '"</script>';
+				echo '<meta http-equiv="refresh" content="0;url=' . admin_url( 'admin.php?page=yc-plugin-dashboard/yc-plugin-dashboard.php' ) . '">';
+				echo '<script type="text/javascript">document.location.href="' . admin_url( 'admin.php?page=yc-plugin-dashboard/Fyc-plugin-dashboard.php' ) . '"</script>';
 			} else {
-				if ( wp_redirect( admin_url( 'admin.php?page=yc-plugin-dashboard%2Fyc-plugin-dashboard.php' ) ) ) {
+				if ( wp_redirect( admin_url( 'admin.php?page=yc-plugin-dashboard/yc-plugin-dashboard.php' ) ) ) {
 					exit();
 				}
 			}
